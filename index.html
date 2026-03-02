@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Kids A1–A2 🌟</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & VARIABLES ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a1a2e;
+  --ink2:#3d3d6b;
+  --muted:#8888aa;
+  --bg:#f7f5ff;
+  --card:#ffffff;
+  --border:#e8e4f8;
+  --red:#ff4757;
+  --blue:#2979ff;
+  --teal:#00bfa6;
+  --yellow:#ffca28;
+  --purple:#7c4dff;
+  --orange:#ff6d00;
+  --green:#00c853;
+  --pink:#e91e8c;
+  --radius:16px;
+  --radius-sm:10px;
+  --shadow:0 4px 24px rgba(124,77,255,.10);
+  --shadow-hover:0 8px 40px rgba(124,77,255,.18);
+  --nav-h:64px;
+  --font-h:'Baloo 2',cursive;
+  --font-b:'Nunito',sans-serif;
+}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--bg);color:var(--ink);min-height:100vh;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--font-h);line-height:1.2;color:var(--ink)}
+h1{font-size:clamp(1.8rem,5vw,3rem)}
+h2{font-size:clamp(1.4rem,3vw,2.2rem)}
+h3{font-size:clamp(1.1rem,2vw,1.5rem)}
+p{line-height:1.7}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:var(--font-b)}
+input,textarea,select{font-family:var(--font-b)}
+img{max-width:100%;height:auto}
+ul{list-style:none}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);background:var(--ink);z-index:1000;display:flex;align-items:center;padding:0 1.5rem;gap:1rem;box-shadow:0 2px 20px rgba(0,0,0,.3)}
+.nav-logo{font-family:var(--font-h);font-size:1.4rem;font-weight:800;color:#fff;display:flex;align-items:center;gap:.5rem;white-space:nowrap}
+.nav-logo span{font-size:1.6rem}
+.nav-links{display:flex;align-items:center;gap:.25rem;margin-left:auto;flex-wrap:nowrap}
+.nav-links a,.nav-links button{background:none;border:none;color:rgba(255,255,255,.75);font-size:.875rem;font-weight:700;padding:.45rem .8rem;border-radius:8px;transition:all .2s;white-space:nowrap;cursor:pointer;font-family:var(--font-b)}
+.nav-links a:hover,.nav-links button:hover,.nav-links a.active{background:rgba(255,255,255,.12);color:#fff}
+.nav-btn-teacher{background:var(--yellow)!important;color:var(--ink)!important;border-radius:8px;padding:.4rem .9rem!important}
+.nav-btn-teacher:hover{background:#ffd740!important;transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:.5rem;cursor:pointer;margin-left:auto}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--ink);z-index:999;padding:1rem;flex-direction:column;gap:.25rem;box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.mobile-menu.open{display:flex}
+.mobile-menu a,.mobile-menu button{background:none;border:none;color:rgba(255,255,255,.8);font-size:1rem;font-weight:700;padding:.75rem 1rem;border-radius:10px;text-align:left;width:100%;cursor:pointer;font-family:var(--font-b);transition:background .2s}
+.mobile-menu a:hover,.mobile-menu button:hover{background:rgba(255,255,255,.1);color:#fff}
+.mobile-menu .divider{height:1px;background:rgba(255,255,255,.1);margin:.25rem 0}
+.mobile-menu .nav-btn-teacher{background:var(--yellow)!important;color:var(--ink)!important}
+
+/* ===== PAGE LAYOUT ===== */
+.page{display:none;padding-top:var(--nav-h);min-height:100vh}
+.page.active{display:block;animation:fadeUp .35s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.container{max-width:900px;margin:0 auto;padding:2rem 1.25rem}
+.container-wide{max-width:1100px;margin:0 auto;padding:2rem 1.25rem}
+
+/* ===== HERO ===== */
+.hero{background:var(--ink);color:#fff;padding:3.5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(124,77,255,.4),transparent 60%),radial-gradient(ellipse at 70% 20%,rgba(0,191,166,.3),transparent 50%);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.hero-emoji{font-size:4rem;display:block;margin-bottom:.75rem;animation:bounce 2s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hero h1{color:#fff;font-size:clamp(2rem,6vw,3.5rem);margin-bottom:.75rem}
+.hero p{color:rgba(255,255,255,.8);font-size:1.15rem;margin-bottom:2rem}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.5rem;border-radius:12px;font-weight:800;font-size:.95rem;border:none;transition:all .2s;cursor:pointer;font-family:var(--font-b)}
+.btn-primary{background:var(--purple);color:#fff}
+.btn-primary:hover{background:#9c6fff;transform:translateY(-2px);box-shadow:0 6px 20px rgba(124,77,255,.4)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:#00d4b8;transform:translateY(-2px)}
+.btn-yellow{background:var(--yellow);color:var(--ink)}
+.btn-yellow:hover{background:#ffd740;transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:2px solid rgba(255,255,255,.2)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.btn-sm{padding:.45rem 1rem;font-size:.85rem}
+.btn-lg{padding:.9rem 2rem;font-size:1.05rem}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#ff6070;transform:translateY(-2px)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#33d36a;transform:translateY(-2px)}
+.btn-orange{background:var(--orange);color:#fff}
+.btn-orange:hover{background:#ff8c30;transform:translateY(-2px)}
+
+/* ===== PROGRESS ===== */
+.progress-section{background:var(--card);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow);margin:2rem 0}
+.progress-section h3{margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem}
+.progress-overall{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
+.progress-bar{flex:1;height:14px;background:var(--border);border-radius:99px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--teal));border-radius:99px;transition:width .8s cubic-bezier(.34,1.56,.64,1)}
+.progress-pct{font-weight:800;color:var(--purple);min-width:42px;text-align:right;font-size:1.1rem}
+.topic-bars{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+.topic-bar-item{background:var(--bg);border-radius:var(--radius-sm);padding:1rem}
+.topic-bar-item .label{font-size:.8rem;font-weight:700;color:var(--ink2);margin-bottom:.5rem;display:flex;justify-content:space-between}
+.topic-bar-item .bar{height:8px;background:var(--border);border-radius:99px;overflow:hidden}
+.topic-bar-item .fill{height:100%;border-radius:99px;transition:width .8s cubic-bezier(.34,1.56,.64,1)}
+.fill-vtb{background:var(--red)}
+.fill-aan{background:var(--teal)}
+.fill-tia{background:var(--orange)}
+.fill-prep{background:var(--purple)}
+
+/* ===== TOPIC CARDS ===== */
+.topics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:2rem}
+.topic-card{border-radius:var(--radius);padding:1.75rem 1.5rem;cursor:pointer;transition:all .25s;position:relative;overflow:hidden;border:2px solid transparent}
+.topic-card::before{content:'';position:absolute;inset:0;opacity:.07;background:currentColor}
+.topic-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:currentColor}
+.topic-card .card-emoji{font-size:2.8rem;display:block;margin-bottom:.75rem}
+.topic-card h3{font-size:1.2rem;margin-bottom:.3rem}
+.topic-card p{font-size:.85rem;opacity:.7;margin-bottom:.75rem}
+.topic-card .tag{font-size:.75rem;font-weight:700;background:rgba(0,0,0,.08);padding:.25rem .6rem;border-radius:99px;display:inline-block}
+.card-vtb{color:var(--red);background:#fff5f5}
+.card-aan{color:var(--teal);background:#f0fffe}
+.card-tia{color:var(--orange);background:#fff8f0}
+.card-prep{color:var(--purple);background:#f8f5ff}
+
+/* ===== LESSON PAGE ===== */
+.lesson-hero{padding:2.5rem 1.5rem;color:#fff;text-align:center}
+.lesson-hero p{opacity:.85;margin-top:.5rem}
+.lesson-tabs{display:flex;gap:.5rem;padding:0 1.5rem;flex-wrap:wrap;border-bottom:2px solid var(--border);background:var(--card)}
+.lesson-tab{background:none;border:none;border-bottom:3px solid transparent;padding:.75rem 1.1rem;font-weight:700;font-size:.9rem;color:var(--muted);cursor:pointer;transition:all .2s;margin-bottom:-2px;font-family:var(--font-b)}
+.lesson-tab.active,.lesson-tab:hover{color:var(--ink);border-bottom-color:var(--purple)}
+.lesson-tab.active{color:var(--purple)}
+.tab-panel{display:none;padding:2rem 1.5rem}
+.tab-panel.active{display:block;animation:fadeUp .3s ease}
+
+/* ===== CONTENT CARDS ===== */
+.card{background:var(--card);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow);margin-bottom:1.25rem;border:1px solid var(--border)}
+.card h3{margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.rule-box{background:var(--bg);border-left:4px solid var(--purple);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1rem 0}
+.rule-box.teal{border-left-color:var(--teal)}
+.rule-box.orange{border-left-color:var(--orange)}
+.rule-box.red{border-left-color:var(--red)}
+.rule-box p{margin:.3rem 0;font-size:.95rem}
+.tip{background:#fff9e6;border:1px solid #ffe57a;border-radius:var(--radius-sm);padding:.75rem 1rem;font-size:.9rem;margin-top:1rem}
+.tip::before{content:'💡 ';font-style:normal}
+.example-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.6rem;margin-top:1rem}
+.example-item{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.7rem .9rem;font-size:.9rem;font-weight:600;text-align:center}
+.conj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.6rem;margin:1rem 0}
+.conj-item{background:var(--bg);border-radius:var(--radius-sm);padding:.6rem .9rem;font-size:.9rem;text-align:center}
+.conj-item strong{color:var(--purple)}
+.qa-list{display:flex;flex-direction:column;gap:.6rem;margin-top:1rem}
+.qa-row{display:flex;gap:.75rem;align-items:flex-start;flex-wrap:wrap;font-size:.92rem}
+.qa-q{background:#eef2ff;border-radius:var(--radius-sm);padding:.4rem .8rem;font-weight:700;flex:1;min-width:160px}
+.qa-a{background:#f0fff8;border-radius:var(--radius-sm);padding:.4rem .8rem;flex:1;min-width:160px}
+.mistake-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
+.mistake{display:grid;grid-template-columns:1fr 1fr auto;gap:.5rem;align-items:center;flex-wrap:wrap;font-size:.88rem}
+@media(max-width:500px){.mistake{grid-template-columns:1fr;gap:.2rem}}
+.mistake .wrong{color:var(--red);background:#fff0f0;padding:.35rem .7rem;border-radius:var(--radius-sm);font-weight:600}
+.mistake .right{color:var(--green);background:#f0fff5;padding:.35rem .7rem;border-radius:var(--radius-sm);font-weight:600}
+.mistake .why{color:var(--muted);font-size:.8rem;background:var(--bg);padding:.3rem .6rem;border-radius:var(--radius-sm)}
+.summary-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.88rem}
+.summary-table th{background:var(--ink);color:#fff;padding:.6rem .9rem;text-align:left}
+.summary-table td{padding:.55rem .9rem;border-bottom:1px solid var(--border)}
+.summary-table tr:nth-child(even) td{background:var(--bg)}
+.highlight{color:var(--purple);font-weight:800}
+.gloss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.6rem;margin-top:1rem}
+.gloss-item{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.75rem;text-align:center}
+.gloss-item .em{font-size:1.5rem}
+.gloss-item .w{font-weight:700;font-size:.9rem;margin:.3rem 0 .15rem}
+.gloss-item .es{font-size:.78rem;color:var(--muted)}
+
+/* ===== VIDEO CARDS ===== */
+.video-card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-bottom:1.5rem;border:1px solid var(--border)}
+.video-header{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;background:var(--ink);color:#fff}
+.video-header h4{font-size:1rem;flex:1}
+.video-done-badge{background:var(--green);color:#fff;font-size:.75rem;font-weight:700;padding:.25rem .6rem;border-radius:99px}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.miniquiz{padding:1.25rem;background:var(--bg);border-top:1px solid var(--border)}
+.miniquiz h5{font-size:.9rem;font-weight:800;margin-bottom:1rem;color:var(--ink2)}
+
+/* ===== EXERCISES ===== */
+.ex-card{background:var(--card);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.ex-prompt{font-weight:700;font-size:.95rem;margin-bottom:1rem;line-height:1.5}
+.ex-actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.75rem;align-items:center}
+.mcq-opts{display:flex;flex-direction:column;gap:.5rem}
+.mcq-btn{background:var(--bg);border:2px solid var(--border);border-radius:10px;padding:.7rem 1rem;text-align:left;font-size:.9rem;font-weight:600;transition:all .2s;display:flex;align-items:center;gap:.6rem;cursor:pointer;font-family:var(--font-b);color:var(--ink)}
+.mcq-btn:hover:not(:disabled){border-color:var(--purple);background:#f8f5ff}
+.mcq-btn.correct{border-color:var(--green);background:#f0fff5;color:var(--green)}
+.mcq-btn.wrong{border-color:var(--red);background:#fff0f0;color:var(--red)}
+.mcq-btn:disabled{cursor:not-allowed;opacity:.8}
+.opt-letter{background:var(--ink);color:#fff;width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;flex-shrink:0}
+.correct .opt-letter{background:var(--green)}
+.wrong .opt-letter{background:var(--red)}
+.fb{margin-top:.75rem;padding:.7rem 1rem;border-radius:10px;font-size:.88rem;font-weight:600;display:none}
+.fb.show{display:flex;gap:.5rem;align-items:flex-start}
+.fb.ok{background:#f0fff5;color:#007a33;border:1px solid #b7f5d4}
+.fb.bad{background:#fff0f0;color:#c0392b;border:1px solid #ffc0c0}
+.fill-input{border:2px solid var(--border);border-radius:10px;padding:.55rem .9rem;font-size:.95rem;font-weight:600;font-family:var(--font-b);transition:border .2s;background:var(--card);color:var(--ink);width:150px}
+.fill-input:focus{outline:none;border-color:var(--purple)}
+.fill-input.ok{border-color:var(--green);background:#f0fff5}
+.fill-input.bad{border-color:var(--red);background:#fff0f0}
+.fill-input:disabled{opacity:.7}
+.t-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.t-table th{background:var(--ink);color:#fff;padding:.55rem .8rem;text-align:left}
+.t-table td{padding:.5rem .8rem;border-bottom:1px solid var(--border)}
+.t-table tr:nth-child(even) td{background:var(--bg)}
+
+/* ===== MATCHING ===== */
+.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:.75rem}
+.match-col{display:flex;flex-direction:column;gap:.45rem}
+.match-item{background:var(--bg);border:2px solid var(--border);border-radius:10px;padding:.65rem .9rem;text-align:center;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .2s;user-select:none;line-height:1.4}
+.match-item:hover:not(.matched){border-color:var(--purple);background:#f0ebff;transform:translateY(-1px)}
+.match-item.selected{border-color:var(--purple);background:#e8e0ff;transform:scale(1.04);box-shadow:0 4px 12px rgba(124,77,255,.25)}
+.match-item.matched{border-color:var(--green);background:#f0fff5;color:#007a33;cursor:default;transform:none}
+.match-item.shake{animation:shake .4s ease;border-color:var(--red);background:#fff0f0}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}60%{transform:translateX(6px)}}
+.match-score{margin-top:.75rem;font-size:.88rem;font-weight:700;color:var(--purple);display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.match-label{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem;text-align:center;padding:.3rem;background:var(--border);border-radius:6px}
+
+/* ===== UNSCRAMBLE ===== */
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;min-height:44px;margin:.75rem 0}
+.chip{background:var(--ink);color:#fff;border:none;border-radius:8px;padding:.4rem .8rem;font-size:.85rem;font-weight:700;cursor:pointer;transition:all .2s;font-family:var(--font-b)}
+.chip:hover:not(.used){background:var(--purple);transform:translateY(-2px)}
+.chip.used{opacity:.3;cursor:not-allowed}
+.ans-zone{min-height:44px;border:2px dashed var(--border);border-radius:10px;padding:.5rem;display:flex;flex-wrap:wrap;gap:.5rem;background:var(--bg)}
+.ans-chip{background:var(--purple);color:#fff;border:none;border-radius:8px;padding:.4rem .8rem;font-size:.85rem;font-weight:700;cursor:pointer;transition:all .2s;font-family:var(--font-b)}
+.ans-chip:hover{background:var(--red);transform:translateY(-2px)}
+
+/* ===== WRITING ===== */
+.writing-card{background:var(--card);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.writing-card h4{margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.writing-prompt{background:var(--bg);border-left:4px solid var(--orange);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:.9rem 1rem;margin-bottom:1rem;font-style:italic;color:var(--ink2)}
+.writing-model{background:#f0fff8;border-radius:var(--radius-sm);padding:.75rem 1rem;font-size:.88rem;margin:.75rem 0;color:var(--ink2);border:1px solid #b7f5d4}
+.writing-ta{width:100%;border:2px solid var(--border);border-radius:10px;padding:.75rem 1rem;font-size:.9rem;font-family:var(--font-b);min-height:100px;resize:vertical;transition:border .2s;color:var(--ink)}
+.writing-ta:focus{outline:none;border-color:var(--purple)}
+.rubric{margin:.75rem 0;display:flex;flex-direction:column;gap:.4rem}
+.rubric-item{display:flex;align-items:center;gap:.6rem;font-size:.88rem;cursor:pointer;padding:.3rem}
+.rubric-cb{width:20px;height:20px;border:2px solid var(--border);border-radius:6px;flex-shrink:0;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.rubric-item:hover .rubric-cb{border-color:var(--purple)}
+.rubric-item.checked .rubric-cb{background:var(--green);border-color:var(--green);color:#fff}
+.rubric-item.checked .rubric-cb::after{content:'✓';font-size:.75rem;font-weight:800}
+
+/* ===== PRACTICE TABS ===== */
+.prac-tabs{display:flex;gap:.4rem;flex-wrap:wrap;padding:1.5rem 1.5rem .75rem;background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:var(--nav-h);z-index:100}
+.prac-tab{background:var(--bg);border:2px solid var(--border);border-radius:10px;padding:.5rem 1rem;font-size:.85rem;font-weight:700;color:var(--muted);cursor:pointer;transition:all .2s;font-family:var(--font-b)}
+.prac-tab.active,.prac-tab:hover{background:var(--purple);border-color:var(--purple);color:#fff}
+
+/* ===== GAMES ===== */
+.games-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:1.5rem}
+.game-card{border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:all .25s;box-shadow:var(--shadow);border:2px solid transparent}
+.game-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:currentColor}
+.game-banner{padding:2rem;text-align:center;font-size:3.5rem}
+.game-body{background:var(--card);padding:1.25rem}
+.game-body h3{font-size:1rem;margin-bottom:.35rem}
+.game-body p{font-size:.82rem;color:var(--muted);line-height:1.5;margin-bottom:.75rem}
+.game-score-badge{font-size:.78rem;font-weight:700;background:var(--bg);border:1px solid var(--border);padding:.2rem .6rem;border-radius:99px;color:var(--ink2)}
+.game-1{color:var(--red)}
+.game-1 .game-banner{background:linear-gradient(135deg,#ff4757,#ff6b81)}
+.game-2{color:var(--blue)}
+.game-2 .game-banner{background:linear-gradient(135deg,#2979ff,#40c4ff)}
+.game-3{color:var(--orange)}
+.game-3 .game-banner{background:linear-gradient(135deg,#ff6d00,#ffd740)}
+.game-4{color:var(--purple)}
+.game-4 .game-banner{background:linear-gradient(135deg,#7c4dff,#e040fb)}
+
+/* ===== MODAL ===== */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;display:none;align-items:center;justify-content:center;padding:1rem}
+.modal-bg.open{display:flex;animation:fadeIn .2s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal{background:var(--card);border-radius:var(--radius);width:100%;max-width:700px;max-height:90vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.modal-head{display:flex;align-items:center;gap:.75rem;padding:1.25rem 1.5rem;background:var(--ink);color:#fff;flex-shrink:0}
+.modal-head h3{flex:1;color:#fff;font-size:1.1rem}
+.modal-close{background:rgba(255,255,255,.1);border:none;color:#fff;width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:background .2s;flex-shrink:0}
+.modal-close:hover{background:rgba(255,255,255,.2)}
+.modal-body{overflow-y:auto;padding:1.5rem;flex:1}
+.game-hud{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:#fff;padding:.75rem 1rem;border-radius:10px;margin-bottom:1rem;font-weight:700;font-size:.9rem}
+.game-timer{background:var(--yellow);color:var(--ink);padding:.25rem .7rem;border-radius:8px;font-weight:800}
+.scene-img{width:100%;border-radius:var(--radius-sm);border:2px solid var(--border);margin-bottom:1rem}
+
+/* ===== FINAL QUIZ ===== */
+.quiz-hero{background:var(--ink);color:#fff;padding:3rem 1.5rem;text-align:center}
+.quiz-hero h1{color:#fff;margin-bottom:.5rem}
+.quiz-hero p{color:rgba(255,255,255,.75)}
+.quiz-start-card{max-width:560px;margin:2rem auto;background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);text-align:center;border:1px solid var(--border)}
+.quiz-warning{background:#fff9e6;border:2px solid var(--yellow);border-radius:var(--radius-sm);padding:1.25rem;margin:1.25rem 0;text-align:left;font-size:.9rem}
+.quiz-q-counter{text-align:center;color:var(--muted);font-size:.85rem;font-weight:700;margin-bottom:.75rem}
+.quiz-progress-bar{height:8px;background:var(--border);border-radius:99px;overflow:hidden;margin-bottom:1.5rem}
+.quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--teal));border-radius:99px;transition:width .5s ease}
+.quiz-result{max-width:680px;margin:2rem auto;background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);border:1px solid var(--border);text-align:center}
+.grade-badge{display:inline-block;width:90px;height:90px;border-radius:50%;font-family:var(--font-h);font-size:2.5rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:1rem auto;color:#fff}
+.grade-A{background:var(--green)}
+.grade-B{background:var(--blue)}
+.grade-C{background:var(--orange)}
+.grade-D{background:var(--red)}
+.result-score{font-size:2.5rem;font-family:var(--font-h);color:var(--purple);margin:.5rem 0}
+.review-links{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin:1rem 0}
+.review-link{background:var(--bg);border:2px solid var(--border);border-radius:10px;padding:.45rem .9rem;font-size:.85rem;font-weight:700;cursor:pointer;transition:all .2s;font-family:var(--font-b);color:var(--ink2)}
+.review-link:hover{border-color:var(--purple);color:var(--purple)}
+.answer-review{margin-top:1.5rem;text-align:left;max-height:320px;overflow-y:auto;border:1px solid var(--border);border-radius:var(--radius-sm)}
+.ans-row{display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 1rem;border-bottom:1px solid var(--border);font-size:.85rem}
+.ans-row:last-child{border-bottom:none}
+.ans-row .icon{font-size:1rem;flex-shrink:0}
+.ans-row .ans-text{flex:1;line-height:1.5}
+.ans-row .ans-exp{color:var(--muted);font-size:.8rem;margin-top:.2rem}
+
+/* ===== PROGRESS PAGE ===== */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin:1.5rem 0}
+.stat-card{background:var(--card);border-radius:var(--radius);padding:1.5rem;text-align:center;box-shadow:var(--shadow);border:1px solid var(--border)}
+.stat-icon{font-size:2.5rem;margin-bottom:.5rem}
+.stat-value{font-family:var(--font-h);font-size:2rem;color:var(--purple);font-weight:800}
+.stat-label{font-size:.82rem;color:var(--muted);font-weight:600}
+.achievements-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.75rem;margin-top:1rem}
+.ach{background:var(--card);border:2px solid var(--border);border-radius:var(--radius-sm);padding:1rem;text-align:center;transition:all .2s;opacity:.45}
+.ach.earned{opacity:1;border-color:var(--yellow);box-shadow:0 0 0 3px rgba(255,202,40,.2)}
+.ach .ach-icon{font-size:2rem;margin-bottom:.4rem}
+.ach .ach-name{font-size:.78rem;font-weight:700;color:var(--ink2)}
+
+/* ===== TEACHER PANEL ===== */
+.teacher-bar{display:none;background:linear-gradient(90deg,var(--yellow),#ffd740);color:var(--ink);padding:.75rem 1.5rem;position:fixed;bottom:0;left:0;right:0;z-index:900;display:none;align-items:center;gap:1rem;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,.15)}
+.teacher-bar.show{display:flex}
+.teacher-bar span{font-weight:800;font-size:.9rem;flex:1}
+.teacher-bar .t-btns{display:flex;gap:.5rem;flex-wrap:wrap}
+.teacher-bar .tb{background:rgba(0,0,0,.1);border:none;border-radius:8px;padding:.4rem .8rem;font-size:.8rem;font-weight:700;cursor:pointer;font-family:var(--font-b);transition:background .2s}
+.teacher-bar .tb:hover{background:rgba(0,0,0,.2)}
+
+/* ===== NOTIFICATION ===== */
+.notif{position:fixed;bottom:1.5rem;right:1.5rem;background:var(--ink);color:#fff;padding:.9rem 1.3rem;border-radius:12px;font-weight:700;font-size:.9rem;z-index:9999;max-width:300px;box-shadow:0 8px 30px rgba(0,0,0,.25);animation:slideIn .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes slideIn{from{transform:translateX(120%);opacity:0}to{transform:translateX(0);opacity:1}}
+.notif.ok{background:var(--green)}
+.notif.bad{background:var(--red)}
+.notif.warn{background:var(--orange)}
+.notif.info{background:var(--blue)}
+
+/* ===== CONFETTI ===== */
+.confetti-p{position:fixed;z-index:9998;border-radius:3px;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+
+/* ===== LESSON BOTTOM NAV ===== */
+.lesson-bottom-nav{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem;padding:1.5rem;border-top:1px solid var(--border);background:var(--bg)}
+.lesson-step-badge{background:var(--ink);color:#fff;border-radius:99px;font-size:.7rem;font-weight:800;padding:.15rem .5rem;margin-left:.3rem}
+
+/* ===== TOPIC COMPLETION ===== */
+.topic-done-banner{background:linear-gradient(135deg,var(--green),#00a844);color:#fff;border-radius:var(--radius);padding:1.5rem;text-align:center;margin:1.5rem 0}
+.topic-done-banner h3{color:#fff;font-size:1.3rem}
+
+/* ===== IMPROVED MATCHING ===== */
+.match-label{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;text-align:center}
+
+/* ===== QUESTION NUMBERING ===== */
+.q-num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--purple);color:#fff;border-radius:50%;font-size:.72rem;font-weight:800;margin-right:.4rem;flex-shrink:0}
+
+/* ===== SCROLLABLE QUIZ REVIEW ===== */
+.answer-review::-webkit-scrollbar{width:6px}
+.answer-review::-webkit-scrollbar-track{background:var(--bg)}
+.answer-review::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.answer-review::-webkit-scrollbar-thumb:hover{background:var(--muted)}
+
+/* ===== LESSON PAGE IMPROVEMENTS ===== */
+.lesson-hero{padding:2.75rem 1.5rem 3rem}
+.tab-panel{padding:2rem 1.5rem;max-width:100%}
+@media(max-width:768px){
+  .lesson-hero{padding:2rem 1rem 2.5rem}
+  .tab-panel{padding:1.25rem 1rem}
+  .lesson-bottom-nav{gap:.5rem;padding:1.25rem}
+}
+
+/* ===== IMPROVED GAME CARDS ===== */
+.game-card{border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:transform .25s,box-shadow .25s;box-shadow:var(--shadow);border:none;text-align:left}
+.game-card:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 12px 40px rgba(0,0,0,.15)}
+.game-banner{display:flex;align-items:center;justify-content:center}
+
+/* ===== IMPROVED SCENE EXERCISES ===== */
+.count-row{flex-wrap:wrap;gap:.4rem;align-items:center}
+
+
+.tf-row{display:flex;justify-content:space-between;align-items:flex-start;gap:.75rem;flex-wrap:wrap;margin-bottom:.75rem;background:var(--bg);border-radius:var(--radius-sm);padding:.9rem 1rem}
+.tf-stmt{flex:1;font-size:.9rem;font-weight:600;min-width:200px}
+.tf-btns{display:flex;gap:.4rem;flex-shrink:0}
+
+/* ===== COUNT EXERCISE ===== */
+.count-row{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-size:.9rem;font-weight:700;margin-bottom:.75rem;padding:.75rem 1rem;background:var(--bg);border-radius:var(--radius-sm)}
+.count-sel{border:2px solid var(--border);border-radius:8px;padding:.4rem .6rem;font-size:.88rem;font-weight:700;font-family:var(--font-b);background:var(--card);cursor:pointer}
+.count-num{width:70px;border:2px solid var(--border);border-radius:8px;padding:.4rem .6rem;font-size:.88rem;font-weight:700;font-family:var(--font-b);background:var(--card)}
+.count-num:focus,.count-sel:focus{outline:none;border-color:var(--purple)}
+
+/* ===== SECTION HEADERS ===== */
+.section-head{background:var(--card);border-bottom:1px solid var(--border);padding:1.5rem;margin-bottom:0}
+.section-head h2{display:flex;align-items:center;gap:.6rem}
+
+/* ===== MISC ===== */
+.points-pill{background:var(--yellow);color:var(--ink);font-size:.75rem;font-weight:800;padding:.2rem .6rem;border-radius:99px;margin-left:.4rem}
+.badge-done{background:var(--green);color:#fff;font-size:.75rem;font-weight:700;padding:.2rem .5rem;border-radius:6px}
+.badge-todo{background:var(--bg);color:var(--muted);font-size:.75rem;font-weight:700;padding:.2rem .5rem;border-radius:6px;border:1px solid var(--border)}
+.done-overlay{text-align:center;padding:1.5rem;background:#f0fff8;border-top:1px solid var(--border)}
+.done-overlay p{font-size:1rem;font-weight:700;color:var(--green)}
+.topic-pill{display:inline-block;font-size:.7rem;font-weight:800;padding:.15rem .5rem;border-radius:6px;margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.04em}
+.pill-vtb{background:#fff0f0;color:var(--red)}
+.pill-aan{background:#f0fffe;color:var(--teal)}
+.pill-tia{background:#fff8f0;color:var(--orange)}
+.pill-prep{background:#f8f5ff;color:var(--purple)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .tab-panel{padding:1.25rem 1rem}
+  .lesson-tabs{padding:0 1rem;gap:.25rem}
+  .lesson-tab{padding:.6rem .7rem;font-size:.8rem}
+  .prac-tabs{padding:1rem 1rem .5rem}
+  .prac-tab{font-size:.78rem;padding:.4rem .7rem}
+  .match-grid{grid-template-columns:1fr 1fr}
+  .container,.container-wide{padding:1.25rem 1rem}
+  .game-banner{padding:1.5rem;font-size:3rem}
+  .games-grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  .teacher-bar{padding:.6rem 1rem;bottom:0}
+}
+@media(max-width:480px){
+  .hero-btns{gap:.5rem}
+  .btn-lg{padding:.75rem 1.25rem;font-size:.95rem}
+  .topics-grid{grid-template-columns:1fr 1fr}
+  .match-item{font-size:.78rem;padding:.5rem .6rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo"><span>🌟</span>English Kids</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#" onclick="go('home');return false" data-page="home">🏠 Home</a></li>
+    <li><a href="#" onclick="go('vtb');return false" data-page="vtb">📝 Verb To Be</a></li>
+    <li><a href="#" onclick="go('aan');return false" data-page="aan">🔤 A/An</a></li>
+    <li><a href="#" onclick="go('tia');return false" data-page="tia">🏡 There is/are</a></li>
+    <li><a href="#" onclick="go('prep');return false" data-page="prep">📍 Prepositions</a></li>
+    <li><a href="#" onclick="go('practice');return false" data-page="practice">✏️ Practice</a></li>
+    <li><a href="#" onclick="go('games');return false" data-page="games">🎮 Games</a></li>
+    <li><a href="#" onclick="go('quiz');return false" data-page="quiz">📝 Quiz</a></li>
+    <li><a href="#" onclick="go('progress');return false" data-page="progress">📊 Progress</a></li>
+    <li><button class="nav-btn-teacher" onclick="openTeacher()">🎓 Teacher</button></li>
+  </ul>
+  <button class="hamburger" id="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mob-menu">
+  <a href="#" onclick="go('home');return false">🏠 Home</a>
+  <div class="divider"></div>
+  <a href="#" onclick="go('vtb');return false">📝 Verb To Be</a>
+  <a href="#" onclick="go('aan');return false">🔤 A / An</a>
+  <a href="#" onclick="go('tia');return false">🏡 There is / There are</a>
+  <a href="#" onclick="go('prep');return false">📍 Prepositions</a>
+  <div class="divider"></div>
+  <a href="#" onclick="go('practice');return false">✏️ Practice</a>
+  <a href="#" onclick="go('games');return false">🎮 Games</a>
+  <a href="#" onclick="go('quiz');return false">📝 Final Quiz</a>
+  <a href="#" onclick="go('progress');return false">📊 Progress</a>
+  <div class="divider"></div>
+  <button class="nav-btn-teacher" onclick="openTeacher()">🎓 Teacher Mode</button>
+</div>
+
+<!-- ======================== PAGES ======================== -->
+
+<!-- HOME -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-content">
+      <span class="hero-emoji">🌟</span>
+      <h1>English Kids A1–A2</h1>
+      <p>Learn English grammar with fun lessons, videos, games and quizzes!</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary btn-lg" onclick="go('vtb')">📖 Start Lessons</button>
+        <button class="btn btn-teal btn-lg" onclick="go('games')">🎮 Play Games</button>
+        <button class="btn btn-ghost btn-lg" onclick="go('quiz')">📝 Final Quiz</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="progress-section" id="home-progress-section">
+      <h3>⭐ My Progress</h3>
+      <div class="progress-overall">
+        <div class="progress-bar"><div class="progress-fill" id="overall-bar" style="width:0%"></div></div>
+        <div class="progress-pct" id="overall-pct">0%</div>
+      </div>
+      <div class="topic-bars" id="topic-bars-home"></div>
+    </div>
+
+    <h2 style="margin-bottom:1rem">📚 Choose a Topic</h2>
+    <div class="topics-grid">
+      <div class="topic-card card-vtb" onclick="go('vtb')" tabindex="0" onkeydown="if(event.key==='Enter')go('vtb')">
+        <span class="card-emoji">📝</span>
+        <h3>Verb To Be</h3><p>am / is / are</p>
+        <span class="tag">7 cards • 2 videos</span>
+      </div>
+      <div class="topic-card card-aan" onclick="go('aan')" tabindex="0" onkeydown="if(event.key==='Enter')go('aan')">
+        <span class="card-emoji">🔤</span>
+        <h3>A / An</h3><p>Indefinite Articles</p>
+        <span class="tag">5 cards • 2 videos</span>
+      </div>
+      <div class="topic-card card-tia" onclick="go('tia')" tabindex="0" onkeydown="if(event.key==='Enter')go('tia')">
+        <span class="card-emoji">🏡</span>
+        <h3>There is / There are</h3><p>Hay — singular / plural</p>
+        <span class="tag">6 cards • 3 videos</span>
+      </div>
+      <div class="topic-card card-prep" onclick="go('prep')" tabindex="0" onkeydown="if(event.key==='Enter')go('prep')">
+        <span class="card-emoji">📍</span>
+        <h3>Prepositions</h3><p>in, on, under, next to…</p>
+        <span class="tag">8 cards • glossary • 2 videos</span>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:1.5rem">
+      <h3>🗺️ Suggested Study Path</h3>
+      <div style="display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin-top:1rem;font-size:.88rem;font-weight:700">
+        <span style="background:#fff0f0;color:var(--red);padding:.4rem .8rem;border-radius:8px;cursor:pointer" onclick="go('vtb')">1. 📝 Verb To Be</span>
+        <span style="color:var(--muted)">→</span>
+        <span style="background:#f0fffe;color:var(--teal);padding:.4rem .8rem;border-radius:8px;cursor:pointer" onclick="go('aan')">2. 🔤 A / An</span>
+        <span style="color:var(--muted)">→</span>
+        <span style="background:#fff8f0;color:var(--orange);padding:.4rem .8rem;border-radius:8px;cursor:pointer" onclick="go('tia')">3. 🏡 There is/are</span>
+        <span style="color:var(--muted)">→</span>
+        <span style="background:#f8f5ff;color:var(--purple);padding:.4rem .8rem;border-radius:8px;cursor:pointer" onclick="go('prep')">4. 📍 Prepositions</span>
+        <span style="color:var(--muted)">→</span>
+        <span style="background:var(--ink);color:#fff;padding:.4rem .8rem;border-radius:8px;cursor:pointer" onclick="go('practice')">5. ✏️ Practice</span>
+        <span style="color:var(--muted)">→</span>
+        <span style="background:var(--yellow);color:var(--ink);padding:.4rem .8rem;border-radius:8px;cursor:pointer" onclick="go('quiz')">6. 📝 Final Quiz</span>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:1.25rem">
+      <h3>🚨 Common Mistakes — Quick Review!</h3>
+      <div class="mistake-list">
+        <div class="mistake"><span class="wrong">❌ He are a student.</span><span class="right">✅ He is a student.</span><span class="why">He/She/It → IS</span></div>
+        <div class="mistake"><span class="wrong">❌ I have a apple.</span><span class="right">✅ I have an apple.</span><span class="why">Vowel sound → AN</span></div>
+        <div class="mistake"><span class="wrong">❌ There are a cat.</span><span class="right">✅ There is a cat.</span><span class="why">One thing → IS</span></div>
+        <div class="mistake"><span class="wrong">❌ The book is in the table.</span><span class="right">✅ The book is on the table.</span><span class="why">Surface → ON</span></div>
+        <div class="mistake"><span class="wrong">❌ There isn't no milk.</span><span class="right">✅ There isn't any milk.</span><span class="why">No double negative!</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LESSON PAGES (populated by JS) -->
+<div class="page" id="page-vtb"></div>
+<div class="page" id="page-aan"></div>
+<div class="page" id="page-tia"></div>
+<div class="page" id="page-prep"></div>
+
+<!-- PRACTICE -->
+<div class="page" id="page-practice">
+  <div class="section-head"><h2>✏️ Practice Exercises</h2></div>
+  <div class="prac-tabs" id="prac-tabs">
+    <button class="prac-tab active" onclick="switchPrac('fill',this)">✏️ Fill in Blank</button>
+    <button class="prac-tab" onclick="switchPrac('mcq',this)">🔘 Multiple Choice</button>
+    <button class="prac-tab" onclick="switchPrac('match',this)">🔗 Matching</button>
+    <button class="prac-tab" onclick="switchPrac('scramble',this)">🔀 Unscramble</button>
+    <button class="prac-tab" onclick="switchPrac('write',this)">✍️ Writing</button>
+  </div>
+  <div class="container">
+    <div id="prac-fill" class="prac-panel"></div>
+    <div id="prac-mcq" class="prac-panel" style="display:none"></div>
+    <div id="prac-match" class="prac-panel" style="display:none"></div>
+    <div id="prac-scramble" class="prac-panel" style="display:none"></div>
+    <div id="prac-write" class="prac-panel" style="display:none"></div>
+  </div>
+</div>
+
+<!-- GAMES -->
+<div class="page" id="page-games">
+  <div class="section-head"><h2>🎮 Mini-Games</h2></div>
+  <div class="container-wide">
+    <div class="games-grid" id="games-grid"></div>
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div class="page" id="page-quiz">
+  <div class="quiz-hero">
+    <h1>📝 Final Quiz</h1>
+    <p>Test everything you've learned — 15 questions across all topics!</p>
+  </div>
+  <div class="container" id="quiz-container"></div>
+</div>
+
+<!-- PROGRESS -->
+<div class="page" id="page-progress">
+  <div class="section-head"><h2>📊 My Progress</h2></div>
+  <div class="container" id="progress-page-content"></div>
+</div>
+
+<!-- GAME MODAL -->
+<div class="modal-bg" id="game-modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modal-title">Game</h3>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- TEACHER MODAL -->
+<div class="modal-bg" id="teacher-modal" onclick="if(event.target===this)closeTeacher()">
+  <div class="modal" style="max-width:400px">
+    <div class="modal-head">
+      <h3>🎓 Teacher Mode</h3>
+      <button class="modal-close" onclick="closeTeacher()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p style="margin-bottom:1rem;color:var(--ink2)">Enter the teacher password to access special controls.</p>
+      <input type="password" id="teacher-pw" placeholder="Password…" style="width:100%;border:2px solid var(--border);border-radius:10px;padding:.7rem 1rem;font-size:1rem;font-family:var(--font-b);margin-bottom:.75rem" onkeydown="if(event.key==='Enter')checkTeacher()">
+      <p id="teacher-err" style="color:var(--red);font-size:.85rem;font-weight:600;display:none;margin-bottom:.75rem">❌ Wrong password. Try again.</p>
+      <div style="display:flex;gap:.5rem;justify-content:flex-end">
+        <button class="btn btn-ghost" onclick="closeTeacher()" style="color:var(--ink2);border-color:var(--border)">Cancel</button>
+        <button class="btn btn-primary" onclick="checkTeacher()">🔓 Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TEACHER BAR -->
+<div class="teacher-bar" id="teacher-bar">
+  <span>🎓 Teacher Mode Active</span>
+  <div class="t-btns">
+    <button class="tb" onclick="teacherReveal()">👁 Show Answers</button>
+    <button class="tb" onclick="teacherResetProgress()">🔄 Reset Progress</button>
+    <button class="tb" onclick="teacherResetQuiz()">📝 Reset Quiz</button>
+    <button class="tb" onclick="closeTeacherBar()">✕ Close</button>
+  </div>
+</div>
+
+<script>
+// =============================================================
+// DATA
+// =============================================================
+const DATA = {
+  lessons: {
+    vtb: {
+      id:'vtb', color:'#ff4757', bg:'linear-gradient(135deg,#ff4757,#c0392b)',
+      emoji:'📝', title:'Verb To Be', sub:'am / is / are',
+      cards:[
+        {title:'📌 What is "To Be"?', html:`
+          <p>The verb <strong>to be</strong> means <em>"ser / estar"</em> in Spanish. We use 3 different forms:</p>
+          <div class="rule-box">
+            <p>🙋 <strong>I</strong> → <span class="highlight">am</span></p>
+            <p>👤 <strong>He / She / It</strong> → <span class="highlight">is</span></p>
+            <p>👥 <strong>You / We / They</strong> → <span class="highlight">are</span></p>
+          </div>
+          <div class="tip">Only <strong>I</strong> uses "am". He/She/It uses "is". Everything else uses "are".</div>`},
+        {title:'✅ Affirmative (Positive Sentences)', html:`
+          <div class="conj-grid">
+            <div class="conj-item">I <strong>am</strong> happy.</div>
+            <div class="conj-item">You <strong>are</strong> a student.</div>
+            <div class="conj-item">He <strong>is</strong> tall.</div>
+            <div class="conj-item">She <strong>is</strong> nice.</div>
+            <div class="conj-item">It <strong>is</strong> a cat.</div>
+            <div class="conj-item">We <strong>are</strong> friends.</div>
+            <div class="conj-item">They <strong>are</strong> funny.</div>
+          </div>`},
+        {title:'🤝 Contractions (Short Forms)', html:`
+          <p>In English, we often join pronoun + verb. These are called <em>contracciones</em>:</p>
+          <div class="conj-grid" style="margin-top:.75rem">
+            <div class="conj-item">I am → <strong>I'm</strong></div>
+            <div class="conj-item">You are → <strong>You're</strong></div>
+            <div class="conj-item">He is → <strong>He's</strong></div>
+            <div class="conj-item">She is → <strong>She's</strong></div>
+            <div class="conj-item">It is → <strong>It's</strong></div>
+            <div class="conj-item">We are → <strong>We're</strong></div>
+            <div class="conj-item">They are → <strong>They're</strong></div>
+          </div>
+          <div class="tip">The apostrophe (') replaces the missing letter. I'm = I <u>a</u>m (the "a" is removed).</div>`},
+        {title:'❌ Negative Sentences', html:`
+          <p>Add <strong>not</strong> after am/is/are to make a negative:</p>
+          <div class="conj-grid" style="margin-top:.75rem">
+            <div class="conj-item">I am not → <strong>I'm not</strong></div>
+            <div class="conj-item">He is not → <strong>He isn't</strong></div>
+            <div class="conj-item">She is not → <strong>She isn't</strong></div>
+            <div class="conj-item">We are not → <strong>We aren't</strong></div>
+            <div class="conj-item">They are not → <strong>They aren't</strong></div>
+          </div>
+          <div class="tip"><strong>isn't</strong> = is not &nbsp;|&nbsp; <strong>aren't</strong> = are not &nbsp;|&nbsp; There is NO contraction for "am not" — we always say <strong>I'm not</strong>.</div>`},
+        {title:'❓ Questions & Short Answers', html:`
+          <p>To make a question, put <strong>am/is/are FIRST</strong>:</p>
+          <div class="qa-list">
+            <div class="qa-row"><div class="qa-q"><strong>Am</strong> I late?</div><div class="qa-a">Yes, you <strong>are</strong>. / No, you <strong>aren't</strong>.</div></div>
+            <div class="qa-row"><div class="qa-q"><strong>Is</strong> he a teacher?</div><div class="qa-a">Yes, he <strong>is</strong>. / No, he <strong>isn't</strong>.</div></div>
+            <div class="qa-row"><div class="qa-q"><strong>Are</strong> you students?</div><div class="qa-a">Yes, we <strong>are</strong>. / No, we <strong>aren't</strong>.</div></div>
+            <div class="qa-row"><div class="qa-q"><strong>Are</strong> they cats?</div><div class="qa-a">Yes, they <strong>are</strong>. / No, they <strong>aren't</strong>.</div></div>
+          </div>
+          <div class="tip">In short answers, we NEVER use contractions in positive answers: ✅ "Yes, she <strong>is</strong>." ❌ "Yes, she's."</div>`},
+        {title:'🚨 Common Mistakes', html:`
+          <div class="mistake-list">
+            <div class="mistake"><span class="wrong">❌ He are a boy.</span><span class="right">✅ He is a boy.</span><span class="why">He → IS</span></div>
+            <div class="mistake"><span class="wrong">❌ I is happy.</span><span class="right">✅ I am happy.</span><span class="why">I → AM</span></div>
+            <div class="mistake"><span class="wrong">❌ They is funny.</span><span class="right">✅ They are funny.</span><span class="why">They → ARE</span></div>
+            <div class="mistake"><span class="wrong">❌ She am nice.</span><span class="right">✅ She is nice.</span><span class="why">She → IS</span></div>
+            <div class="mistake"><span class="wrong">❌ Its a cat.</span><span class="right">✅ It's a cat.</span><span class="why">Its = belonging; It's = It is</span></div>
+            <div class="mistake"><span class="wrong">❌ Yes, she's. (short answer)</span><span class="right">✅ Yes, she is.</span><span class="why">No contractions in positive short answers</span></div>
+          </div>`},
+        {title:'📋 Summary Table', html:`
+          <div style="overflow-x:auto">
+          <table class="summary-table">
+            <tr><th>Pronoun</th><th>Positive</th><th>Negative</th><th>Question</th></tr>
+            <tr><td><strong>I</strong></td><td>I am / I'm</td><td>I'm not</td><td>Am I?</td></tr>
+            <tr><td><strong>You</strong></td><td>You are / You're</td><td>You aren't</td><td>Are you?</td></tr>
+            <tr><td><strong>He/She/It</strong></td><td>He is / He's</td><td>He isn't</td><td>Is he?</td></tr>
+            <tr><td><strong>We</strong></td><td>We are / We're</td><td>We aren't</td><td>Are we?</td></tr>
+            <tr><td><strong>They</strong></td><td>They are / They're</td><td>They aren't</td><td>Are they?</td></tr>
+          </table></div>`}
+      ],
+      videos:[
+        {id:'vtb-v1', title:'Verb To Be — Song & Practice', url:'https://www.youtube.com/embed/zP9-5zg0G6A',
+         quiz:[
+           {q:'What form of "to be" goes with "I"?', type:'mcq', opts:['is','am','are','be'], ans:1, exp:'"I" always uses "am". I am happy.'},
+           {q:'Complete: "She ___ a teacher."', type:'fill', ans:'is', exp:'She → is. She is a teacher.'},
+           {q:'Which is correct?', type:'mcq', opts:['They is funny.','They am funny.','They are funny.','They be funny.'], ans:2, exp:'You/We/They → are. They are funny.'}
+         ]},
+        {id:'vtb-v2', title:'Verb To Be — More Practice', url:'https://www.youtube.com/embed/aSH6CZmQUv0',
+         quiz:[
+           {q:'What is the contraction of "I am"?', type:'mcq', opts:["I'm","Im'","Iam","I'am"], ans:0, exp:"I am → I'm. The apostrophe replaces the 'a'."},
+           {q:'"Are you a student?" — "Yes, I ___."', type:'fill', ans:'am', exp:'Short answer: Yes, I am.'},
+           {q:'Negative of "He is tall":',type:'mcq',opts:["He isn't tall.","He aren't tall.","He amn't tall.","He not tall."],ans:0,exp:"He is not tall → He isn't tall."}
+         ]}
+      ],
+      sceneTF:[
+        {s:'"The books are on the desks" is correct.', ans:true, e:'Yes! Books (plural) → are. ✅'},
+        {s:'"The teacher are in the classroom" is correct.', ans:false, e:'Wrong! The teacher → IS (singular). The teacher IS in the classroom.'},
+        {s:'We say "There is a book" for one book.', ans:true, e:'Correct! One book → There IS a book. ✅'}
+      ],
+      sceneItems:[{n:'books',v:'are',c:3},{n:'chairs',v:'are',c:2},{n:'student desks',v:'are',c:3}]
+    },
+    aan: {
+      id:'aan', color:'#00bfa6', bg:'linear-gradient(135deg,#00bfa6,#00796b)',
+      emoji:'🔤', title:'A / An', sub:'Indefinite Articles',
+      cards:[
+        {title:'📌 What are A and An?', html:`
+          <p><strong>A</strong> and <strong>An</strong> are <em>indefinite articles</em> (artículos indefinidos = "un / una").</p>
+          <div class="rule-box teal">
+            <p>🔵 <strong>A</strong> + consonant sound → <em>a book, a dog, a cat</em></p>
+            <p>🟠 <strong>An</strong> + vowel sound → <em>an apple, an orange, an elephant</em></p>
+          </div>
+          <div class="tip">The rule is about <strong>SOUND</strong>, not just the letter! ¡La regla es sobre el SONIDO!</div>`},
+        {title:'🔵 A — Before Consonant Sounds', html:`
+          <p>Use <strong>a</strong> when the next word starts with a <strong>consonant</strong> sound:</p>
+          <div class="example-grid">
+            <div class="example-item">🐈 a <strong>cat</strong></div>
+            <div class="example-item">📚 a <strong>book</strong></div>
+            <div class="example-item">🐕 a <strong>dog</strong></div>
+            <div class="example-item">🏠 a <strong>house</strong></div>
+            <div class="example-item">🎂 a <strong>cake</strong></div>
+            <div class="example-item">⭐ a <strong>star</strong></div>
+            <div class="example-item">🎒 a <strong>bag</strong></div>
+            <div class="example-item">🌳 a <strong>tree</strong></div>
+          </div>`},
+        {title:'🟠 An — Before Vowel Sounds', html:`
+          <p>Use <strong>an</strong> when the next word starts with a <strong>vowel</strong> sound (a, e, i, o, u):</p>
+          <div class="example-grid">
+            <div class="example-item">🍎 an <strong>apple</strong></div>
+            <div class="example-item">🐘 an <strong>elephant</strong></div>
+            <div class="example-item">🍦 an <strong>ice cream</strong></div>
+            <div class="example-item">🍊 an <strong>orange</strong></div>
+            <div class="example-item">☂️ an <strong>umbrella</strong></div>
+            <div class="example-item">🦅 an <strong>eagle</strong></div>
+            <div class="example-item">🥚 an <strong>egg</strong></div>
+            <div class="example-item">🐜 an <strong>ant</strong></div>
+          </div>`},
+        {title:'⚠️ Tricky Cases — Sound Matters!', html:`
+          <div class="rule-box orange"><p>🔑 It's about SOUND, not spelling! ¡El sonido, no la letra!</p></div>
+          <div class="conj-grid">
+            <div class="conj-item"><strong>an hour</strong><br><small>'h' is silent → "our" (vowel)</small></div>
+            <div class="conj-item"><strong>a university</strong><br><small>"yoo-ni" (consonant y)</small></div>
+            <div class="conj-item"><strong>a uniform</strong><br><small>"yoo-ni" (consonant y)</small></div>
+            <div class="conj-item"><strong>an honest</strong> person<br><small>'h' is silent</small></div>
+          </div>`},
+        {title:'🚨 Common Mistakes', html:`
+          <div class="mistake-list">
+            <div class="mistake"><span class="wrong">❌ I have a apple.</span><span class="right">✅ I have an apple.</span><span class="why">"apple" → vowel "a" → AN</span></div>
+            <div class="mistake"><span class="wrong">❌ She is an doctor.</span><span class="right">✅ She is a doctor.</span><span class="why">"doctor" → consonant "d" → A</span></div>
+            <div class="mistake"><span class="wrong">❌ He has an big dog.</span><span class="right">✅ He has a big dog.</span><span class="why">"big" → consonant "b" → A</span></div>
+            <div class="mistake"><span class="wrong">❌ I see a elephant.</span><span class="right">✅ I see an elephant.</span><span class="why">"elephant" → vowel "e" → AN</span></div>
+            <div class="mistake"><span class="wrong">❌ a umbrella</span><span class="right">✅ an umbrella</span><span class="why">"umbrella" → vowel "u" → AN</span></div>
+          </div>`}
+      ],
+      videos:[
+        {id:'aan-v1', title:'A and An — Rules & Examples', url:'https://www.youtube.com/embed/84LU4Phzvco',
+         quiz:[
+           {q:'Which article goes before "orange"?', type:'mcq', opts:['a','an','the','some'], ans:1, exp:'"Orange" starts with "o" (vowel) → AN orange.'},
+           {q:'Complete: "I have ___ dog."', type:'fill', ans:'a', exp:'"Dog" starts with "d" (consonant) → A dog.'},
+           {q:'Which is correct?', type:'mcq', opts:['a umbrella','an umbrella','an big umbrella','a an umbrella'], ans:1, exp:'"Umbrella" starts with "u" (vowel) → AN umbrella.'}
+         ]},
+        {id:'aan-v2', title:'A or An? — Song', url:'https://www.youtube.com/embed/cvwhip4dw3Y',
+         quiz:[
+           {q:'We use "an" before ___ sounds.', type:'mcq', opts:['consonant','vowel','any','none'], ans:1, exp:'AN before vowel sounds: an apple, an elephant, an orange.'},
+           {q:'Complete: "She eats ___ egg every day."', type:'fill', ans:'an', exp:'"Egg" starts with "e" (vowel) → AN egg.'},
+           {q:'Which is correct?', type:'mcq', opts:['I want a ice cream.','I want an ice cream.','I want the ice cream.','I want some ice cream.'], ans:1, exp:'"Ice cream" starts with "i" (vowel) → AN ice cream.'}
+         ]}
+      ],
+      sceneTF:[
+        {s:'"A elephant" is correct.', ans:false, e:'Wrong! "elephant" starts with vowel "e" → AN elephant.'},
+        {s:'"An orange" is correct.', ans:true, e:'Correct! "orange" starts with "o" (vowel) → AN orange. ✅'},
+        {s:'"A umbrella" is correct.', ans:false, e:'Wrong! "umbrella" starts with "u" (vowel) → AN umbrella.'}
+      ],
+      sceneItems:[{n:'animals',v:'are',c:3},{n:'lions',v:'is',c:1},{n:'elephants',v:'is',c:1}]
+    },
+    tia: {
+      id:'tia', color:'#ff6d00', bg:'linear-gradient(135deg,#ff6d00,#e65100)',
+      emoji:'🏡', title:'There is / There are', sub:'Hay — singular / plural',
+      cards:[
+        {title:'📌 There is vs There are', html:`
+          <p><strong>There is / There are</strong> = <em>"Hay"</em> (español). Used to say something exists somewhere.</p>
+          <div class="rule-box orange">
+            <p>📦 <strong>There IS</strong> → 1 thing (singular) or uncountable noun</p>
+            <p>📦📦 <strong>There ARE</strong> → 2 or more things (plural)</p>
+          </div>
+          <div class="conj-grid" style="margin-top:.75rem">
+            <div class="conj-item">There <strong>is</strong> a cat. (1)</div>
+            <div class="conj-item">There <strong>are</strong> 3 dogs. (3)</div>
+            <div class="conj-item">There <strong>is</strong> some water. (uncountable)</div>
+            <div class="conj-item">There <strong>are</strong> many books.</div>
+          </div>`},
+        {title:'✅ Affirmative Forms', html:`
+          <div style="overflow-x:auto">
+          <table class="t-table">
+            <tr><th>Form</th><th>Example</th></tr>
+            <tr><td>There <strong>is</strong> a/an…</td><td>There is a book on the desk.</td></tr>
+            <tr><td>There <strong>is</strong> some…</td><td>There is some milk in the cup.</td></tr>
+            <tr><td>There <strong>are</strong> [number]…</td><td>There are 5 chairs here.</td></tr>
+            <tr><td>There <strong>are</strong> some…</td><td>There are some apples on the table.</td></tr>
+          </table></div>`},
+        {title:'❌ Negative Forms', html:`
+          <div class="conj-grid">
+            <div class="conj-item">There <strong>isn't</strong> a cat.</div>
+            <div class="conj-item">There <strong>aren't</strong> any dogs.</div>
+            <div class="conj-item">There <strong>isn't</strong> any milk.</div>
+            <div class="conj-item">There <strong>aren't</strong> any chairs.</div>
+          </div>
+          <div class="tip">In negatives, use <strong>any</strong> instead of <em>some</em>: There aren't <strong>any</strong> chairs. ❌ NOT "some chairs".</div>`},
+        {title:'❓ Questions & Short Answers', html:`
+          <div class="qa-list">
+            <div class="qa-row"><div class="qa-q"><strong>Is there</strong> a cat?</div><div class="qa-a">Yes, there <strong>is</strong>. / No, there <strong>isn't</strong>.</div></div>
+            <div class="qa-row"><div class="qa-q"><strong>Is there</strong> any milk?</div><div class="qa-a">Yes, there <strong>is</strong>. / No, there <strong>isn't</strong>.</div></div>
+            <div class="qa-row"><div class="qa-q"><strong>Are there</strong> any dogs?</div><div class="qa-a">Yes, there <strong>are</strong>. / No, there <strong>aren't</strong>.</div></div>
+            <div class="qa-row"><div class="qa-q"><strong>How many</strong> cats are there?</div><div class="qa-a">There are two cats.</div></div>
+          </div>`},
+        {title:'🔢 How Many?', html:`
+          <p>To ask about quantity: <strong>How many</strong> + plural noun + <strong>are there?</strong></p>
+          <div class="conj-grid" style="margin-top:.75rem">
+            <div class="conj-item"><strong>How many</strong> books are there?<br>→ There are <strong>3 books</strong>.</div>
+            <div class="conj-item"><strong>How many</strong> cats are there?<br>→ There <strong>aren't</strong> any.</div>
+            <div class="conj-item"><strong>How many</strong> chairs are there?<br>→ There are <strong>6 chairs</strong>.</div>
+          </div>`},
+        {title:'🚨 Common Mistakes', html:`
+          <div class="mistake-list">
+            <div class="mistake"><span class="wrong">❌ There are a cat.</span><span class="right">✅ There is a cat.</span><span class="why">One cat → IS</span></div>
+            <div class="mistake"><span class="wrong">❌ There is three dogs.</span><span class="right">✅ There are three dogs.</span><span class="why">Three dogs → ARE</span></div>
+            <div class="mistake"><span class="wrong">❌ Is there some dogs?</span><span class="right">✅ Are there any dogs?</span><span class="why">Plural + use "any" in questions</span></div>
+            <div class="mistake"><span class="wrong">❌ There isn't no milk.</span><span class="right">✅ There isn't any milk.</span><span class="why">No double negative in English!</span></div>
+          </div>`}
+      ],
+      videos:[
+        {id:'tia-v1', title:'There is / There are — Lesson', url:'https://www.youtube.com/embed/j3llK722RVQ',
+         quiz:[
+           {q:'"There is" is used with ___ nouns.', type:'mcq', opts:['singular or uncountable','only plural','only countable','two or more things'], ans:0, exp:'"There IS" = singular (a book) OR uncountable (some water). "There ARE" = plural (3 books).'},
+           {q:'Complete: "There ___ three apples."', type:'fill', ans:'are', exp:'Three apples = plural → There ARE three apples.'},
+           {q:'Question form of "There is a dog":',type:'mcq',opts:['There is a dog?','Is there a dog?','Are there any dogs?','Dog is there?'],ans:1,exp:'IS there a dog? (singular) → "Is there a dog?" ✅'}
+         ]},
+        {id:'tia-v2', title:'There is / There are — Song', url:'https://www.youtube.com/embed/TC-dN4bIaQ8',
+         quiz:[
+           {q:'"There ___ some milk in the glass."', type:'mcq', opts:['are','is','am','be'], ans:1, exp:'Milk = uncountable → "There IS some milk".'},
+           {q:'Complete: "There aren\'t ___ chairs."', type:'fill', ans:'any', exp:'In negatives use "any": There aren\'t any chairs.'},
+           {q:'Which is correct?', type:'mcq', opts:['There are a cat.','There is a cat.','There is cats.','There are cats.'], ans:1, exp:'"a cat" = ONE cat → "There IS a cat." ✅  Common mistakes: ❌ "There are a cat" (singular needs IS) and ❌ "There is cats" (plural needs ARE).'}
+         ]},
+        {id:'tia-v3', title:'There is / There are — Practice', url:'https://www.youtube.com/embed/csrECoq8uL0',
+         quiz:[
+           {q:'"How many chairs?" → "There ___ five."', type:'fill', ans:'are', exp:'Five chairs = plural → There ARE five chairs.'},
+           {q:'"Is there any water?" — say NO:', type:'mcq', opts:["No, there aren't any.","No, there isn't.","No, there are not.","No, it isn't."], ans:1, exp:'Water = uncountable → "No, there isn\'t." ✅  "There aren\'t" is for plural things.'},
+           {q:'Complete: "___ there any books?"', type:'fill', ans:'Are', exp:'Books = plural → "Are there any books?"'}
+         ]}
+      ],
+      sceneTF:[
+        {s:'"There are a cup on the table" is correct.', ans:false, e:'Wrong! One cup → "There IS a cup on the table."'},
+        {s:'"There are two chairs" is correct for plural.', ans:true, e:'Correct! Two chairs → There ARE two chairs. ✅'},
+        {s:'To ask about plural things: "Is there any apples?"', ans:false, e:'Wrong! Apples = plural → "ARE there any apples?"'}
+      ],
+      sceneItems:[{n:'cup',v:'is',c:1},{n:'chairs',v:'are',c:2},{n:'apples',v:'are',c:2}]
+    },
+    prep: {
+      id:'prep', color:'#7c4dff', bg:'linear-gradient(135deg,#7c4dff,#311b92)',
+      emoji:'📍', title:'Prepositions of Place', sub:'in, on, under, next to, between, behind, in front of',
+      glossary:[
+        {w:'desk',es:'escritorio',em:'🪑'},{w:'chair',es:'silla',em:'🪑'},{w:'book',es:'libro',em:'📚'},
+        {w:'apple',es:'manzana',em:'🍎'},{w:'bed',es:'cama',em:'🛏️'},{w:'lamp',es:'lámpara',em:'💡'},
+        {w:'bag',es:'bolso',em:'🎒'},{w:'box',es:'caja',em:'📦'},{w:'table',es:'mesa',em:'🍽️'},
+        {w:'shelf',es:'estante',em:'📐'},{w:'floor',es:'suelo',em:'🟫'},{w:'wall',es:'pared',em:'🧱'},
+        {w:'window',es:'ventana',em:'🪟'},{w:'door',es:'puerta',em:'🚪'},{w:'pencil',es:'lápiz',em:'✏️'},{w:'ruler',es:'regla',em:'📏'}
+      ],
+      cards:[
+        {title:'📦 IN — Dentro de',html:`<div class="conj-grid"><div class="conj-item">The apple is <strong>IN</strong> the bag.</div><div class="conj-item">The fish is <strong>IN</strong> the water.</div><div class="conj-item">She is <strong>IN</strong> the classroom.</div><div class="conj-item">The books are <strong>IN</strong> the box.</div></div><div class="tip">IN = inside something (dentro de algo)</div>`},
+        {title:'📋 ON — Sobre / Encima de',html:`<div class="conj-grid"><div class="conj-item">The book is <strong>ON</strong> the desk.</div><div class="conj-item">The cat is <strong>ON</strong> the chair.</div><div class="conj-item">The apple is <strong>ON</strong> the table.</div><div class="conj-item">The picture is <strong>ON</strong> the wall.</div></div><div class="tip">ON = touching a surface from above (sobre una superficie)</div>`},
+        {title:'⬇️ UNDER — Debajo de',html:`<div class="conj-grid"><div class="conj-item">The dog is <strong>UNDER</strong> the table.</div><div class="conj-item">The ball is <strong>UNDER</strong> the bed.</div><div class="conj-item">The bag is <strong>UNDER</strong> the chair.</div><div class="conj-item">The shoes are <strong>UNDER</strong> the desk.</div></div><div class="tip">UNDER = below something (debajo de algo)</div>`},
+        {title:'➡️ NEXT TO — Al lado de',html:`<div class="conj-grid"><div class="conj-item">The lamp is <strong>NEXT TO</strong> the bed.</div><div class="conj-item">She sits <strong>NEXT TO</strong> her friend.</div><div class="conj-item">The bag is <strong>NEXT TO</strong> the door.</div></div><div class="tip">NEXT TO = beside, very close (al lado de)</div>`},
+        {title:'↔️ BETWEEN — Entre',html:`<div class="conj-grid"><div class="conj-item">The cat is <strong>BETWEEN</strong> the two chairs.</div><div class="conj-item">She is <strong>BETWEEN</strong> Tom and Anna.</div><div class="conj-item">The table is <strong>BETWEEN</strong> the sofas.</div></div><div class="tip">BETWEEN = in the middle of TWO things (entre dos cosas). Always needs two things!</div>`},
+        {title:'🔙 BEHIND — Detrás de',html:`<div class="conj-grid"><div class="conj-item">The teacher is <strong>BEHIND</strong> the desk.</div><div class="conj-item">The cat is <strong>BEHIND</strong> the sofa.</div><div class="conj-item">He is hiding <strong>BEHIND</strong> the tree.</div></div><div class="tip">BEHIND = at the back of (detrás de)</div>`},
+        {title:'🔜 IN FRONT OF — Delante de',html:`<div class="conj-grid"><div class="conj-item">The student is <strong>IN FRONT OF</strong> the board.</div><div class="conj-item">The car is <strong>IN FRONT OF</strong> the house.</div><div class="conj-item">She is <strong>IN FRONT OF</strong> the class.</div></div><div class="tip">IN FRONT OF = facing, opposite of behind (delante de). Don't forget the OF!</div>`},
+        {title:'🚨 Common Mistakes',html:`<div class="mistake-list"><div class="mistake"><span class="wrong">❌ The book is in the table.</span><span class="right">✅ The book is ON the table.</span><span class="why">Surface → ON</span></div><div class="mistake"><span class="wrong">❌ She is on the classroom.</span><span class="right">✅ She is IN the classroom.</span><span class="why">Room → IN</span></div><div class="mistake"><span class="wrong">❌ He is between the sofa.</span><span class="right">✅ He is behind the sofa.</span><span class="why">BETWEEN needs TWO things</span></div><div class="mistake"><span class="wrong">❌ The cat is in front the door.</span><span class="right">✅ The cat is in front OF the door.</span><span class="why">Always: in front OF</span></div></div>`}
+      ],
+      videos:[
+        {id:'prep-v1', title:'Prepositions of Place — Lesson', url:'https://www.youtube.com/embed/kq65VGkVwC8',
+         quiz:[
+           {q:'The cat is ___ the box. (inside)', type:'mcq', opts:['on','under','in','behind'], ans:2, exp:'"In" = inside. The cat is IN the box.'},
+           {q:'Complete: "The book is ___ the table." (surface)', type:'fill', ans:'on', exp:'"On" = on a surface. The book is ON the table.'},
+           {q:'The dog is hiding ___ the sofa. (at the back)', type:'mcq', opts:['in front of','next to','between','behind'], ans:3, exp:'"Behind" = at the back of.'}
+         ]},
+        {id:'prep-v2', title:'Prepositions of Place — Song', url:'https://www.youtube.com/embed/niPyVnC6W5g',
+         quiz:[
+           {q:'The lamp is ___ the bed. (beside it)', type:'mcq', opts:['under','next to','in','between'], ans:1, exp:'"Next to" = beside, very close.'},
+           {q:'Complete: "The cat is ___ the two dogs."', type:'fill', ans:'between', exp:'"Between" = in the middle of two things.'},
+           {q:'The student stands ___ the board. (facing)', type:'mcq', opts:['behind','under','in front of','on'], ans:2, exp:'"In front of" = facing something.'}
+         ]}
+      ],
+      sceneTF:[
+        {s:'"The lamp is next to the bed" means the lamp is beside the bed.', ans:true, e:'Correct! Next to = beside. ✅'},
+        {s:'"The book is in the shelf" is correct.', ans:false, e:'Wrong! We say ON the shelf (on a surface). "The book is ON the shelf."'},
+        {s:'"The shoes are under the bed" means the shoes are below the bed.', ans:true, e:'Correct! Under = below/beneath. ✅'}
+      ],
+      sceneItems:[{n:'pillows',v:'is',c:1},{n:'lamps',v:'is',c:1},{n:'books',v:'are',c:2}]
+    }
+  },
+
+  exercises: {
+    fill:[
+      {id:'f01',s:'I ___ a student.',ans:'am',hint:'I → am',topic:'vtb'},
+      {id:'f02',s:'She ___ my teacher.',ans:'is',hint:'She → is',topic:'vtb'},
+      {id:'f03',s:'They ___ funny!',ans:'are',hint:'They → are',topic:'vtb'},
+      {id:'f04',s:'It ___ a big dog.',ans:'is',hint:'It → is',topic:'vtb'},
+      {id:'f05',s:'We ___ in the classroom.',ans:'are',hint:'We → are',topic:'vtb'},
+      {id:'f06',s:'He ___ not happy today.',ans:'is',hint:'He → is',topic:'vtb'},
+      {id:'f07',s:'I have ___ orange in my bag.',ans:'an',hint:'"orange" starts with vowel "o"',topic:'aan'},
+      {id:'f08',s:'She has ___ new book.',ans:'a',hint:'"book" starts with consonant "b"',topic:'aan'},
+      {id:'f09',s:'There is ___ apple on the table.',ans:'an',hint:'"apple" starts with vowel "a"',topic:'aan'},
+      {id:'f10',s:'There ___ a cat on the sofa.',ans:'is',hint:'one cat = singular → is',topic:'tia'},
+      {id:'f11',s:'There ___ three dogs in the park.',ans:'are',hint:'three dogs = plural → are',topic:'tia'},
+      {id:'f12',s:'There ___ some milk in the glass.',ans:'is',hint:'milk = uncountable → is',topic:'tia'},
+      {id:'f13',s:'There aren\'t ___ chairs in the room.',ans:'any',hint:'negatives use "any", not "some"',topic:'tia'},
+      {id:'f14',s:'___ there any apples in the bowl?',ans:'Are',hint:'apples = plural → Are there?',topic:'tia'},
+      {id:'f15',s:'The pencil is ___ the desk. (touching surface)',ans:'on',hint:'surface → on',topic:'prep'}
+    ],
+    mcq:[
+      {id:'m01',topic:'vtb',q:'He ___ a good student.',opts:['am','is','are','be'],ans:1,exp:'He/She/It → is'},
+      {id:'m02',topic:'vtb',q:'___ you from Spain?',opts:['Am','Is','Are','Be'],ans:2,exp:'You → Are.'},
+      {id:'m03',topic:'vtb',q:'My parents ___ very kind.',opts:['am','is','are','been'],ans:2,exp:'My parents = They → are'},
+      {id:'m04',topic:'vtb',q:'___ she your sister?',opts:['Am','Is','Are','Do'],ans:1,exp:'She → Is.'},
+      {id:'m05',topic:'aan',q:'I see ___ elephant at the zoo.',opts:['a','an','the','some'],ans:1,exp:'"elephant" starts with "e" (vowel) → AN'},
+      {id:'m06',topic:'aan',q:'She wants ___ new bike.',opts:['a','an','the','some'],ans:0,exp:'"bike" starts with "b" (consonant) → A'},
+      {id:'m07',topic:'aan',q:'Can I have ___ ice cream?',opts:['a','an','the','any'],ans:1,exp:'"ice cream" starts with "i" (vowel) → AN'},
+      {id:'m08',topic:'tia',q:'___ there a park near here?',opts:['Is','Are','Am','Be'],ans:0,exp:'One park → singular → Is there?'},
+      {id:'m09',topic:'tia',q:'There ___ some water in the bottle.',opts:['are','am','is','be'],ans:2,exp:'Water = uncountable → There IS.'},
+      {id:'m10',topic:'tia',q:'"There ___ any students in the room." (negative)',opts:['isn\'t','aren\'t','is','am not'],ans:1,exp:'Students = plural → There AREN\'T any students.'},
+      {id:'m11',topic:'tia',q:'How many chairs ___ there? — correct form:',opts:['is','am','are','be'],ans:2,exp:'How many always uses ARE: How many chairs ARE there?'},
+      {id:'m12',topic:'prep',q:'The cat is sleeping ___ the bed. (below)',opts:['in front of','on top','under','between'],ans:2,exp:'UNDER = below.'},
+      {id:'m13',topic:'prep',q:'She is standing ___ the two boys. (middle)',opts:['behind','next to','between','under'],ans:2,exp:'BETWEEN = middle of two.'},
+      {id:'m14',topic:'prep',q:'The keys are ___ my bag.',opts:['on','in','under','next to'],ans:1,exp:'IN = inside.'}
+    ],
+    match:[
+      {id:'mt01',title:'📝 Verb To Be — Match pronoun to correct sentence',topic:'vtb',
+        pairs:[
+          ['I ___','I am happy.'],
+          ['She ___','She is my friend.'],
+          ['They ___','They are students.'],
+          ['We ___','We are in class.'],
+          ['It ___','It is a big cat.']
+        ]},
+      {id:'mt02',title:'🔤 A or An — Match each word to the correct article',topic:'aan',
+        pairs:[
+          ['apple 🍎','an apple'],
+          ['bus 🚌','a bus'],
+          ['orange 🍊','an orange'],
+          ['dog 🐕','a dog'],
+          ['umbrella ☂️','an umbrella']
+        ]},
+      {id:'mt03',title:'📍 Prepositions — Match English to Spanish meaning',topic:'prep',
+        pairs:[
+          ['in','dentro de'],
+          ['on','encima de'],
+          ['under','debajo de'],
+          ['next to','al lado de'],
+          ['in front of','delante de']
+        ]},
+      {id:'mt04',title:'🏡 There is / There are — Match to the correct form',topic:'tia',
+        pairs:[
+          ['1 cat 🐱','There is a cat.'],
+          ['3 dogs 🐕🐕🐕','There are three dogs.'],
+          ['2 chairs 🪑🪑','There are two chairs.'],
+          ['1 apple 🍎','There is an apple.'],
+          ['4 books 📚📚📚📚','There are four books.']
+        ]},
+      {id:'mt05',title:'📝 Contractions — Match short form to full form',topic:'vtb',
+        pairs:[
+          ["I'm",'I am'],
+          ["She's",'She is'],
+          ["They're",'They are'],
+          ["We're",'We are'],
+          ["isn't",'is not']
+        ]}
+    ],
+    scramble:[
+      {id:'sc01',topic:'vtb',words:['am','I','student','a'],ans:'I am a student',hint:'Subject + verb + article + noun'},
+      {id:'sc02',topic:'vtb',words:['she','teacher','is','a'],ans:'she is a teacher',hint:'Pronoun + verb + article + noun'},
+      {id:'sc03',topic:'vtb',words:['are','they','happy'],ans:'they are happy',hint:'Subject + verb + adjective'},
+      {id:'sc04',topic:'aan',words:['I','have','an','apple'],ans:'I have an apple',hint:'"apple" = vowel → an'},
+      {id:'sc05',topic:'tia',words:['There','is','a','the','on','book','table'],ans:'There is a book on the table',hint:'There + is/are + a/an + noun + prep'},
+      {id:'sc06',topic:'tia',words:['There','are','park','in','dogs','two','the'],ans:'There are two dogs in the park',hint:'Two = plural → are'},
+      {id:'sc07',topic:'prep',words:['is','The','under','cat','table','the'],ans:'The cat is under the table',hint:'under = below'},
+      {id:'sc08',topic:'prep',words:['is','The','on','book','desk','the'],ans:'The book is on the desk',hint:'on = touching a surface'}
+    ],
+    write:[
+      {id:'w01',topic:'vtb',prompt:'Describe yourself using "to be". Write 4 sentences.',model:'I am 10 years old. I am a student. I am not very tall. I am happy today.',rubric:['Uses am/is/are correctly','At least 4 sentences','Includes a negative','Sentences make sense']},
+      {id:'w02',topic:'aan',prompt:'Name 5 things in your school bag using "a" or "an".',model:'In my bag there is a book, an eraser, a pencil, an orange, and a notebook.',rubric:['Uses "a" correctly (consonant)','Uses "an" correctly (vowel)','Lists 5 items','Correct spelling']},
+      {id:'w03',topic:'tia',prompt:'Write 4 sentences about your classroom using "there is" or "there are".',model:"There are 25 students. There is a blackboard on the wall. There are some books on the desks. There isn't a television.",rubric:['Uses "there is" correctly','Uses "there are" correctly','At least 4 sentences','Makes logical sense']},
+      {id:'w04',topic:'prep',prompt:'Describe where 4 objects are in your bedroom using prepositions.',model:'My lamp is next to my bed. My bag is under the chair. My books are on the shelf. My shoes are in the wardrobe.',rubric:['Uses 3+ different prepositions','4 complete sentences','Correct preposition usage','Clear description']}
+    ]
+  },
+
+  quiz:[
+    {id:'q01',type:'mcq',topic:'vtb',pts:1,q:'Choose the correct form: "She ___ my best friend."',opts:['am','is','are','be'],ans:1,exp:'She → is. She is my best friend.'},
+    {id:'q02',type:'mcq',topic:'vtb',pts:1,q:'Which sentence is correct?',opts:['They is happy.','They am happy.','They are happy.','They be happy.'],ans:2,exp:'They → are. They are happy. ✅'},
+    {id:'q03',type:'fill',topic:'vtb',pts:1,q:'Complete: "I ___ not a teacher."',ans:'am',exp:'I + am. I am not a teacher.'},
+    {id:'q04',type:'mcq',topic:'aan',pts:1,q:'Choose: "___ umbrella"',opts:['a umbrella','an umbrella','the umbrella','some umbrella'],ans:1,exp:'Umbrella starts with "u" (vowel) → an umbrella.'},
+    {id:'q05',type:'fill',topic:'aan',pts:1,q:'Complete: "There is ___ apple on the table."',ans:'an',exp:'Apple starts with "a" (vowel) → an apple.'},
+    {id:'q06',type:'mcq',topic:'aan',pts:1,q:'"I have ___ dog."',opts:['a','an','some','any'],ans:0,exp:'Dog starts with "d" (consonant) → a dog.'},
+    {id:'q07',type:'mcq',topic:'tia',pts:1,q:'"There ___ three cats in the garden."',opts:['is','are','am','be'],ans:1,exp:'Three cats = plural → There are three cats.'},
+    {id:'q08',type:'fill',topic:'tia',pts:1,q:'Complete: "___ there any milk?" (question)',ans:'Is',exp:'Milk is uncountable → Is there any milk?'},
+    {id:'q09',type:'mcq',topic:'tia',pts:1,q:'"There ___ any books in the bag." (negative)',opts:["isn't","aren't","is","am not"],ans:1,exp:"Books = plural → There aren't any books."},
+    {id:'q10',type:'mcq',topic:'prep',pts:1,q:'"The cat is sleeping ___ the sofa." (below)',opts:['on','in','under','next to'],ans:2,exp:'UNDER = below.'},
+    {id:'q11',type:'mcq',topic:'prep',pts:1,q:'"She is standing ___ Tom and Lisa." (middle)',opts:['behind','next to','between','under'],ans:2,exp:'BETWEEN = in the middle of two.'},
+    {id:'q12',type:'fill',topic:'prep',pts:1,q:'Complete: "The book is ___ the shelf." (surface)',ans:'on',exp:'ON = touching a surface.'},
+    {id:'q13',type:'mcq',topic:'vtb',pts:1,q:'Contraction of "They are":',opts:["They've","They'd","They're","They'll"],ans:2,exp:"They are → They're."},
+    {id:'q14',type:'mcq',topic:'aan',pts:1,q:'"There is ___ orange on the desk." — article?',opts:['a','an','some','any'],ans:1,exp:'Orange starts with "o" (vowel) → an orange.'},
+    {id:'q15',type:'write',topic:'mixed',pts:2,q:'Write 3 sentences: use verb to be, a/an, and one preposition.',model:'There is a book on the desk. The teacher is in front of the board. She is an excellent teacher.',rubric:['Uses verb to be correctly','Uses a/an correctly','Uses at least one preposition'],exp:'Model: "There is a book on the desk. The teacher is in front of the board."'}
+  ]
+};
+
+// =============================================================
+// STATE & STORAGE
+// =============================================================
+const STORE_KEY = 'engkids_v3';
+let ST = load();
+
+function load(){
+  try{
+    const r = JSON.parse(localStorage.getItem(STORE_KEY)||'null');
+    if(!r) return fresh();
+    if(!r.games) r.games = {};
+    return r;
+  }catch(e){return fresh();}
+}
+function fresh(){
+  return {videos:{},exs:{},games:{},quiz:null,pts:0};
+}
+function save(){
+  try{localStorage.setItem(STORE_KEY,JSON.stringify(ST));}catch(e){}
+  refreshProgress();
+}
+function addPts(n){ST.pts=(ST.pts||0)+n;save();}
+
+// =============================================================
+// NAVIGATION
+// =============================================================
+const PAGES = ['home','vtb','aan','tia','prep','practice','games','quiz','progress'];
+
+function go(id){
+  PAGES.forEach(p=>{
+    const el = document.getElementById('page-'+p);
+    if(el) el.classList.toggle('active', p===id);
+  });
+  document.querySelectorAll('[data-page]').forEach(a=>a.classList.toggle('active',a.dataset.page===id));
+  window.scrollTo({top:0,behavior:'smooth'});
+  closeMenu();
+  // Lazy build
+  if(id==='vtb'&&!document.getElementById('page-vtb').innerHTML) buildLesson('vtb');
+  if(id==='aan'&&!document.getElementById('page-aan').innerHTML) buildLesson('aan');
+  if(id==='tia'&&!document.getElementById('page-tia').innerHTML) buildLesson('tia');
+  if(id==='prep'&&!document.getElementById('page-prep').innerHTML) buildLesson('prep');
+  if(id==='practice'&&!pracBuilt) buildPractice();
+  if(id==='games') buildGames();
+  if(id==='quiz') buildQuiz();
+  if(id==='progress') buildProgress();
+}
+
+function toggleMenu(){
+  const open = document.getElementById('mob-menu').classList.toggle('open');
+  document.getElementById('ham').classList.toggle('open', open);
+}
+function closeMenu(){
+  document.getElementById('mob-menu').classList.remove('open');
+  document.getElementById('ham').classList.remove('open');
+}
+
+// =============================================================
+// PROGRESS
+// =============================================================
+function pct(v,t){return Math.min(100,Math.round(v/Math.max(t,1)*100));}
+
+function overallPct(){
+  const totalV = Object.values(DATA.lessons).reduce((s,l)=>s+l.videos.length,0);
+  const doneV = Object.values(ST.videos).filter(v=>v.done).length;
+  const doneEx = Object.values(ST.exs).filter(e=>e.ok).length;
+  const qPts = ST.quiz ? 20 : 0;
+  return Math.min(100, Math.round(pct(doneV,totalV)*40/100 + Math.min(doneEx*2,40) + qPts));
+}
+
+function topicPct(id){
+  const l = DATA.lessons[id];
+  const doneV = l.videos.filter(v=>ST.videos[v.id]?.done).length;
+  return pct(doneV, l.videos.length)*60/100 + Math.min(Object.keys(ST.exs).filter(k=>ST.exs[k].ok&&ST.exs[k].topic===id).length*5,40);
+}
+
+const topicMeta=[
+  {id:'vtb',label:'📝 Verb To Be',cls:'fill-vtb'},
+  {id:'aan',label:'🔤 A / An',cls:'fill-aan'},
+  {id:'tia',label:'🏡 There is/are',cls:'fill-tia'},
+  {id:'prep',label:'📍 Prepositions',cls:'fill-prep'}
+];
+
+function topicBarsHTML(){
+  return topicMeta.map(m=>{
+    const p=Math.round(topicPct(m.id));
+    return `<div class="topic-bar-item">
+      <div class="label"><span>${m.label}</span><span>${p}%</span></div>
+      <div class="bar"><div class="fill ${m.cls}" style="width:${p}%"></div></div>
+    </div>`;
+  }).join('');
+}
+
+function refreshProgress(){
+  const o=overallPct();
+  document.querySelectorAll('.progress-fill').forEach(e=>e.style.width=o+'%');
+  document.querySelectorAll('.progress-pct').forEach(e=>e.textContent=o+'%');
+  const tb=document.getElementById('topic-bars-home');
+  if(tb) tb.innerHTML=topicBarsHTML();
+  topicMeta.forEach(m=>{
+    const p=Math.round(topicPct(m.id));
+    document.querySelectorAll(`.topicbar-${m.id}`).forEach(el=>{
+      el.querySelector('.fill').style.width=p+'%';
+      el.querySelector('.pct').textContent=p+'%';
+    });
+  });
+}
+
+// =============================================================
+// LESSON BUILDER
+// =============================================================
+function buildLesson(id){
+  const l=DATA.lessons[id];
+  const el=document.getElementById('page-'+id);
+
+  // Build lesson page
+
+  const nextLesson = {vtb:'aan', aan:'tia', tia:'prep', prep:'practice'};
+  const nextLabel = {vtb:'🔤 Next: A / An →', aan:'🏡 Next: There is/are →', tia:'📍 Next: Prepositions →', prep:'✏️ Go to Practice →'};
+
+  el.innerHTML = `
+  <div class="lesson-hero" style="background:${l.bg}">
+    <div style="font-size:3.5rem;margin-bottom:.5rem">${l.emoji}</div>
+    <h1>${l.title}</h1>
+    <p>${l.sub}</p>
+    <div style="margin-top:1.25rem">
+      <div class="topicbar-${id}" style="max-width:320px;margin:0 auto">
+        <div style="display:flex;justify-content:space-between;font-size:.8rem;font-weight:700;color:rgba(255,255,255,.8);margin-bottom:.4rem">
+          <span>Progress</span><span class="pct">0%</span>
+        </div>
+        <div class="bar" style="background:rgba(255,255,255,.25)"><div class="fill" style="background:rgba(255,255,255,.9);width:0%"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="lesson-tabs">
+    <button class="lesson-tab active" onclick="showTab('${id}','lesson',this)">📖 Lesson</button>
+    ${l.glossary ? `<button class="lesson-tab" onclick="showTab('${id}','glossary',this)">📚 Glossary</button>` : ''}
+    <button class="lesson-tab" onclick="showTab('${id}','videos',this)">🎬 Videos (${l.videos.length})</button>
+    <button class="lesson-tab" onclick="showTab('${id}','scene',this)">🖼️ Scene</button>
+  </div>
+  <div id="tab-${id}-lesson" class="tab-panel active">
+    ${buildCards(l)}
+    <div style="max-width:780px;margin:0 auto;padding-bottom:1rem">
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border)">
+        <button class="btn btn-teal" onclick="switchToVideos('${id}')">🎬 Watch Videos</button>
+        <button class="btn btn-primary" onclick="go('practice')">✏️ Practice Now</button>
+        <button class="btn btn-yellow" onclick="go('${nextLesson[id]}')">${nextLabel[id]}</button>
+      </div>
+    </div>
+  </div>
+  ${l.glossary ? `<div id="tab-${id}-glossary" class="tab-panel">${buildGlossary(l)}</div>` : ''}
+  <div id="tab-${id}-videos" class="tab-panel">
+    ${buildVideos(l)}
+    <div style="max-width:780px;margin:0 auto">
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border)">
+        <button class="btn btn-primary" onclick="go('practice')">✏️ Go to Practice</button>
+        <button class="btn btn-yellow" onclick="go('${nextLesson[id]}')">${nextLabel[id]}</button>
+      </div>
+    </div>
+  </div>
+  <div id="tab-${id}-scene" class="tab-panel">
+    ${buildScene(l)}
+    <div style="max-width:780px;margin:0 auto">
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border)">
+        <button class="btn btn-primary" onclick="go('practice')">✏️ Go to Practice</button>
+        <button class="btn btn-yellow" onclick="go('${nextLesson[id]}')">${nextLabel[id]}</button>
+      </div>
+    </div>
+  </div>
+  `;
+  refreshProgress();
+}
+
+function switchToVideos(id){
+  const page = document.getElementById('page-'+id);
+  if(!page) return;
+  page.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  const vPanel = document.getElementById(`tab-${id}-videos`);
+  if(vPanel) vPanel.classList.add('active');
+  page.querySelectorAll('.lesson-tab').forEach(b=>{
+    b.classList.toggle('active', b.textContent.includes('Video'));
+  });
+  page.scrollIntoView({behavior:'smooth'});
+}
+
+function showTab(lessonId, tab, btn){
+  const page=document.getElementById('page-'+lessonId);
+  page.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  const target=document.getElementById(`tab-${lessonId}-${tab}`);
+  if(target) target.classList.add('active');
+  page.querySelectorAll('.lesson-tab').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+}
+
+function buildCards(l){
+  return `<div style="max-width:780px;margin:0 auto">
+    ${l.cards.map(c=>`<div class="card"><h3>${c.title}</h3>${c.html}</div>`).join('')}
+  </div>`;
+}
+
+function buildGlossary(l){
+  return `<div style="max-width:780px;margin:0 auto"><div class="card">
+    <h3>📚 Vocabulary / Vocabulario</h3>
+    <div class="gloss-grid">
+      ${l.glossary.map(g=>`<div class="gloss-item"><div class="em">${g.em}</div><div class="w">${g.w}</div><div class="es">${g.es}</div></div>`).join('')}
+    </div>
+  </div></div>`;
+}
+
+function buildVideos(l){
+  return `<div style="max-width:780px;margin:0 auto">
+    ${l.videos.map(v=>buildVideoCard(v, l.id)).join('')}
+  </div>`;
+}
+
+function buildVideoCard(v, lessonId){
+  const done = ST.videos[v.id]?.done;
+  const score = ST.videos[v.id]?.score;
+  const doneHtml = done
+    ? `<div class="done-overlay"><p>✅ Completed! Score: ${score}/3 ${score===3?'🌟 Perfect!':score>=2?'👍 Good!':'📚 Review!'}</p></div>`
+    : buildMiniQuiz(v, lessonId);
+
+  return `<div class="video-card">
+    <div class="video-header">
+      <span style="font-size:1.25rem">🎬</span>
+      <h4>${esc(v.title)}</h4>
+      ${done ? '<span class="video-done-badge">✅ Done</span>' : '<span class="badge-todo">Not completed</span>'}
+    </div>
+    <div class="video-wrap">
+      <iframe src="${v.url}" allowfullscreen loading="lazy"></iframe>
+    </div>
+    ${doneHtml}
+  </div>`;
+}
+
+function buildMiniQuiz(v, lessonId){
+  const qHtml = v.quiz.map((q,i)=>{
+    if(q.type==='mcq'){
+      const opts=q.opts.map((o,j)=>`<button class="mcq-btn" onclick="mqMcq(this,'${v.id}',${i},${j},${q.ans},'${lessonId}')">${mkLetter(j)}${esc(o)}</button>`).join('');
+      return `<div class="ex-card" id="mq-${v.id}-${i}" data-done="false">
+        <div class="ex-prompt">${i+1}. ${esc(q.q)}</div>
+        <div class="mcq-opts">${opts}</div>
+        <div class="fb" id="mq-fb-${v.id}-${i}"></div>
+      </div>`;
+    }
+    return `<div class="ex-card" id="mq-${v.id}-${i}" data-done="false">
+      <div class="ex-prompt">${i+1}. ${esc(q.q)}</div>
+      <div class="ex-actions">
+        <input class="fill-input" id="mq-inp-${v.id}-${i}" type="text" placeholder="Answer…">
+        <button class="btn btn-primary btn-sm" onclick="mqFill('${v.id}',${i},'${esc(q.ans)}','${lessonId}')">Check ✓</button>
+      </div>
+      <div class="fb" id="mq-fb-${v.id}-${i}"></div>
+    </div>`;
+  }).join('');
+
+  return `<div class="miniquiz" id="mq-container-${v.id}">
+    <h5>🎯 Answer all 3 questions to complete the video!</h5>
+    ${qHtml}
+    <div style="margin-top:1rem;display:none" id="mq-submit-${v.id}">
+      <button class="btn btn-teal" onclick="submitMQ('${v.id}','${lessonId}')">✅ Mark Video Complete</button>
+    </div>
+  </div>`;
+}
+
+const mqAnswers={};
+
+function mqMcq(btn, vid, qi, oi, ci, lessonId){
+  const card=document.getElementById(`mq-${vid}-${qi}`);
+  if(card.dataset.done==='true') return;
+  card.dataset.done='true';
+  const ok=oi===ci;
+  btn.closest('.mcq-opts').querySelectorAll('.mcq-btn').forEach((b,j)=>{
+    b.disabled=true;
+    if(j===ci) b.classList.add('correct');
+    else if(j===oi&&!ok) b.classList.add('wrong');
+  });
+  const q=DATA.lessons[lessonId].videos.find(v=>v.id===vid).quiz[qi];
+  showFb(`mq-fb-${vid}-${qi}`, ok, ok?'Correct! 🌟':('Answer: <strong>'+esc(q.opts[ci])+'</strong>. '+esc(q.exp)));
+  if(!mqAnswers[vid]) mqAnswers[vid]=new Array(3).fill(null);
+  mqAnswers[vid][qi]=ok;
+  checkMQReady(vid);
+}
+
+function mqFill(vid, qi, correct, lessonId){
+  const card=document.getElementById(`mq-${vid}-${qi}`);
+  if(card.dataset.done==='true') return;
+  card.dataset.done='true';
+  const inp=document.getElementById(`mq-inp-${vid}-${qi}`);
+  const ok=inp.value.trim().toLowerCase()===correct.toLowerCase();
+  inp.disabled=true; inp.classList.add(ok?'ok':'bad');
+  const q=DATA.lessons[lessonId].videos.find(v=>v.id===vid).quiz[qi];
+  showFb(`mq-fb-${vid}-${qi}`, ok, ok?'Correct! 🌟':('Answer: <strong>'+esc(correct)+'</strong>. '+esc(q.exp)));
+  if(!mqAnswers[vid]) mqAnswers[vid]=new Array(3).fill(null);
+  mqAnswers[vid][qi]=ok;
+  checkMQReady(vid);
+}
+
+function checkMQReady(vid){
+  if(mqAnswers[vid] && mqAnswers[vid].every(v=>v!==null)){
+    const btn=document.getElementById(`mq-submit-${vid}`);
+    if(btn) btn.style.display='block';
+  }
+}
+
+function submitMQ(vid, lessonId){
+  const score=(mqAnswers[vid]||[]).filter(Boolean).length;
+  ST.videos[vid]={done:true,score};
+  addPts(score*5);
+  // Rebuild this video card in the DOM
+  const lesson=DATA.lessons[lessonId];
+  const v=lesson.videos.find(v=>v.id===vid);
+  const parent=document.getElementById(`mq-container-${vid}`)?.parentElement;
+  if(parent){
+    parent.querySelector('.video-done-badge,.badge-todo').outerHTML=`<span class="video-done-badge">✅ Done</span>`;
+    const mq=document.getElementById(`mq-container-${vid}`);
+    if(mq) mq.outerHTML=`<div class="done-overlay"><p>✅ Completed! Score: ${score}/3 ${score===3?'🌟 Perfect!':score>=2?'👍 Good!':'📚 Review!'}</p></div>`;
+  }
+  if(score===3) confetti(25);
+  notify(score===3?'🌟 Perfect score! +15 pts':score>=2?`👍 ${score}/3 correct!`:`📚 ${score}/3 — keep practicing!`, score===3?'ok':'warn');
+  save();
+}
+
+// Scene
+function buildScene(l){
+  const sceneMap={'vtb':'classroom','aan':'zoo','tia':'kitchen','prep':'bedroom'};
+  const name=sceneMap[l.id];
+  const sceneUrl=`https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/House/Flat/house_flat.svg`; // placeholder
+  // Use inline SVG scene
+  const svgHtml=getSceneSVG(name);
+
+  const tfHtml=l.sceneTF.map((tf,i)=>{
+    const tid=`${l.id}-tf${i}`;
+    return `<div class="tf-row" id="${tid}">
+      <div class="tf-stmt">${esc(tf.s)}</div>
+      <div class="tf-btns">
+        <button class="btn btn-green btn-sm" onclick="checkTF('${tid}',true,${tf.ans},'${esc(tf.e)}')">✅ TRUE</button>
+        <button class="btn btn-red btn-sm" onclick="checkTF('${tid}',false,${tf.ans},'${esc(tf.e)}')">❌ FALSE</button>
+      </div>
+      <div style="width:100%" class="fb" id="fb-${tid}"></div>
+    </div>`;
+  }).join('');
+
+  const countHtml=l.sceneItems.map((item,i)=>{
+    const cid=`${l.id}-cnt${i}`;
+    return `<div class="count-row" id="${cid}">
+      <span>How many <strong>${item.n}</strong>?</span>
+      <span>There</span>
+      <select class="count-sel" id="${cid}-v"><option value="">is/are?</option><option>is</option><option>are</option></select>
+      <input type="number" class="count-num" id="${cid}-n" placeholder="?" min="0" max="20">
+      <span>${item.n}.</span>
+      <button class="btn btn-primary btn-sm" onclick="checkCount('${cid}','${item.v}',${item.c})">Check ✓</button>
+      <span class="fb" id="fb-${cid}" style="display:inline"></span>
+    </div>`;
+  }).join('');
+
+  return `<div style="max-width:780px;margin:0 auto">
+    <div class="card">
+      <h3>🖼️ Scene: ${name.charAt(0).toUpperCase()+name.slice(1)}</h3>
+      <div style="border-radius:10px;overflow:hidden;border:2px solid var(--border);margin-bottom:1rem">${svgHtml}</div>
+    </div>
+    <div class="card">
+      <h3>✅/❌ True or False — Look at the scene!</h3>
+      ${tfHtml}
+    </div>
+    <div class="card">
+      <h3>🔢 Count & Write — "There is / There are"</h3>
+      ${countHtml}
+    </div>
+  </div>`;
+}
+
+function getSceneSVG(name){
+  const scenes={
+    classroom:`<svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;background:#e8f4f8">
+      <rect width="500" height="320" fill="#e8f4f8"/>
+      <!-- floor --><rect y="240" width="500" height="80" fill="#d4a076"/>
+      <!-- back wall --><rect width="500" height="240" fill="#f0e6d3"/>
+      <!-- windows --><rect x="30" y="30" width="80" height="60" rx="5" fill="#87CEEB" stroke="#8B7355" stroke-width="3"/>
+      <line x1="70" y1="30" x2="70" y2="90" stroke="#8B7355" stroke-width="2"/>
+      <line x1="30" y1="60" x2="110" y2="60" stroke="#8B7355" stroke-width="2"/>
+      <rect x="160" y="30" width="80" height="60" rx="5" fill="#87CEEB" stroke="#8B7355" stroke-width="3"/>
+      <line x1="200" y1="30" x2="200" y2="90" stroke="#8B7355" stroke-width="2"/>
+      <line x1="160" y1="60" x2="240" y2="60" stroke="#8B7355" stroke-width="2"/>
+      <!-- blackboard --><rect x="290" y="20" width="185" height="110" rx="4" fill="#2d5a27" stroke="#5D4037" stroke-width="4"/>
+      <text x="382" y="60" text-anchor="middle" fill="#a8d5a2" font-family="sans-serif" font-size="11">am / is / are</text>
+      <text x="382" y="80" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9">I am a student.</text>
+      <text x="382" y="97" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9">She is nice.</text>
+      <text x="382" y="114" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="9">They are happy.</text>
+      <!-- teacher desk --><rect x="300" y="165" width="130" height="30" rx="3" fill="#8B4513"/>
+      <rect x="305" y="193" width="15" height="40" fill="#6B3410"/>
+      <rect x="410" y="193" width="15" height="40" fill="#6B3410"/>
+      <rect x="305" y="145" width="50" height="20" rx="2" fill="#f5f5dc"/>
+      <!-- apple on desk --><circle cx="380" cy="160" r="10" fill="#ff4757"/>
+      <line x1="380" y1="150" x2="382" y2="145" stroke="#2ecc71" stroke-width="2"/>
+      <!-- student desks --><rect x="30" y="165" width="80" height="25" rx="3" fill="#c8a96e"/>
+      <rect x="35" y="188" width="12" height="35" fill="#b8994e"/>
+      <rect x="93" y="188" width="12" height="35" fill="#b8994e"/>
+      <rect x="150" y="165" width="80" height="25" rx="3" fill="#c8a96e"/>
+      <rect x="155" y="188" width="12" height="35" fill="#b8994e"/>
+      <rect x="213" y="188" width="12" height="35" fill="#b8994e"/>
+      <rect x="30" y="220" width="80" height="25" rx="3" fill="#c8a96e"/>
+      <rect x="35" y="243" width="12" height="35" fill="#b8994e"/>
+      <rect x="93" y="243" width="12" height="35" fill="#b8994e"/>
+      <!-- books on desks --><rect x="35" y="157" width="25" height="8" rx="1" fill="#e74c3c"/>
+      <rect x="38" y="155" width="22" height="8" rx="1" fill="#3498db"/>
+      <rect x="155" y="157" width="25" height="8" rx="1" fill="#2ecc71"/>
+      <rect x="35" y="212" width="25" height="8" rx="1" fill="#9b59b6"/>
+      <!-- chairs --><rect x="42" y="205" width="55" height="5" rx="2" fill="#7f8c8d"/>
+      <rect x="162" y="205" width="55" height="5" rx="2" fill="#7f8c8d"/>
+      <rect x="42" y="260" width="55" height="5" rx="2" fill="#7f8c8d"/>
+      <!-- pencils --><rect x="195" y="158" width="3" height="15" rx="1" fill="#f1c40f" transform="rotate(10 195 158)"/>
+      <!-- bag --><rect x="250" y="225" width="35" height="28" rx="5" fill="#8B4513"/>
+      <path d="M260 225 Q267 215 275 225" stroke="#6B3410" stroke-width="2" fill="none"/>
+      <text x="267" y="244" text-anchor="middle" fill="#c8a96e" font-family="sans-serif" font-size="8">bag</text>
+      <!-- bin --><rect x="460" y="220" width="28" height="35" rx="4" fill="#bdc3c7"/>
+      <rect x="458" y="215" width="32" height="8" rx="2" fill="#95a5a6"/>
+    </svg>`,
+
+    zoo:`<svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+      <rect width="500" height="320" fill="#e8f5e9"/>
+      <rect y="260" width="500" height="60" fill="#8d6e63"/>
+      <rect width="500" height="260" fill="#a5d6a7"/>
+      <!-- sky --><rect width="500" height="120" fill="#87CEEB"/>
+      <!-- trees --><rect x="10" y="80" width="15" height="80" fill="#5D4037"/>
+      <circle cx="18" cy="75" r="30" fill="#388e3c"/>
+      <rect x="460" y="100" width="15" height="60" fill="#5D4037"/>
+      <circle cx="468" cy="95" r="25" fill="#388e3c"/>
+      <!-- enclosure 1 (lion) --><rect x="30" y="120" width="130" height="130" rx="5" fill="#f9f3e3" stroke="#795548" stroke-width="3"/>
+      <text x="95" y="140" text-anchor="middle" fill="#795548" font-family="sans-serif" font-size="10" font-weight="bold">🦁 LION</text>
+      <!-- lion body --><ellipse cx="95" cy="200" rx="35" ry="22" fill="#f4a435"/>
+      <circle cx="95" cy="175" r="20" fill="#e67e22"/>
+      <!-- mane --><circle cx="95" cy="175" r="26" fill="#c0752a" opacity=".6"/>
+      <circle cx="95" cy="175" r="20" fill="#e67e22"/>
+      <!-- face --><circle cx="88" cy="172" r="4" fill="#2c3e50"/>
+      <circle cx="102" cy="172" r="4" fill="#2c3e50"/>
+      <path d="M90 183 Q95 188 100 183" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+      <!-- tail --><path d="M128 195 Q148 175 145 195" stroke="#f4a435" stroke-width="4" fill="none"/>
+      <circle cx="145" cy="198" r="6" fill="#c0752a"/>
+      <!-- enclosure 2 (elephant) --><rect x="185" y="120" width="130" height="130" rx="5" fill="#ecf0f1" stroke="#795548" stroke-width="3"/>
+      <text x="250" y="140" text-anchor="middle" fill="#795548" font-family="sans-serif" font-size="10" font-weight="bold">🐘 ELEPHANT</text>
+      <!-- elephant body --><ellipse cx="250" cy="210" rx="45" ry="30" fill="#9e9e9e"/>
+      <circle cx="250" cy="180" r="28" fill="#9e9e9e"/>
+      <!-- trunk --><path d="M238 195 Q225 225 228 240" stroke="#9e9e9e" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <!-- ears --><ellipse cx="222" cy="180" rx="15" ry="20" fill="#bdbdbd"/>
+      <ellipse cx="278" cy="180" rx="15" ry="20" fill="#bdbdbd"/>
+      <!-- eyes --><circle cx="242" cy="173" r="4" fill="#2c3e50"/>
+      <circle cx="258" cy="173" r="4" fill="#2c3e50"/>
+      <!-- legs --><rect x="220" y="230" width="18" height="25" rx="5" fill="#9e9e9e"/>
+      <rect x="242" y="230" width="18" height="25" rx="5" fill="#9e9e9e"/>
+      <rect x="265" y="230" width="18" height="25" rx="5" fill="#9e9e9e"/>
+      <!-- enclosure 3 (giraffe) --><rect x="340" y="80" width="130" height="170" rx="5" fill="#fff9e6" stroke="#795548" stroke-width="3"/>
+      <text x="405" y="100" text-anchor="middle" fill="#795548" font-family="sans-serif" font-size="10" font-weight="bold">🦒 GIRAFFE</text>
+      <!-- giraffe neck --><rect x="395" y="105" width="20" height="90" rx="5" fill="#f4d03f"/>
+      <!-- patches --><rect x="398" y="110" width="8" height="8" rx="2" fill="#e67e22" opacity=".6"/>
+      <rect x="403" y="125" width="7" height="7" rx="2" fill="#e67e22" opacity=".6"/>
+      <rect x="397" y="138" width="9" height="6" rx="2" fill="#e67e22" opacity=".6"/>
+      <!-- head --><ellipse cx="405" cy="105" rx="16" ry="13" fill="#f4d03f"/>
+      <!-- horns --><rect x="399" y="90" width="4" height="10" rx="2" fill="#e67e22"/>
+      <rect x="408" y="90" width="4" height="10" rx="2" fill="#e67e22"/>
+      <!-- eyes --><circle cx="400" cy="103" r="3" fill="#2c3e50"/>
+      <circle cx="410" cy="103" r="3" fill="#2c3e50"/>
+      <!-- body --><ellipse cx="405" cy="215" rx="30" ry="20" fill="#f4d03f"/>
+      <!-- patches body --><rect x="390" y="205" width="10" height="8" rx="2" fill="#e67e22" opacity=".6"/>
+      <rect x="405" y="218" width="10" height="7" rx="2" fill="#e67e22" opacity=".6"/>
+      <!-- legs --><rect x="382" y="230" width="10" height="30" rx="3" fill="#f4d03f"/>
+      <rect x="395" y="230" width="10" height="30" rx="3" fill="#f4d03f"/>
+      <rect x="408" y="230" width="10" height="30" rx="3" fill="#f4d03f"/>
+      <rect x="422" y="230" width="10" height="30" rx="3" fill="#f4d03f"/>
+    </svg>`,
+
+    kitchen:`<svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+      <rect width="500" height="320" fill="#fff8f0"/>
+      <!-- floor --><rect y="250" width="500" height="70" fill="#e0cfc0"/>
+      <!-- floor tiles --><line x1="0" y1="275" x2="500" y2="275" stroke="#ccc" stroke-width="1"/>
+      <line x1="0" y1="300" x2="500" y2="300" stroke="#ccc" stroke-width="1"/>
+      <line x1="100" y1="250" x2="100" y2="320" stroke="#ccc" stroke-width="1"/>
+      <line x1="200" y1="250" x2="200" y2="320" stroke="#ccc" stroke-width="1"/>
+      <line x1="300" y1="250" x2="300" y2="320" stroke="#ccc" stroke-width="1"/>
+      <line x1="400" y1="250" x2="400" y2="320" stroke="#ccc" stroke-width="1"/>
+      <!-- wall --><rect width="500" height="250" fill="#fef9f5"/>
+      <!-- window --><rect x="180" y="20" width="140" height="90" rx="5" fill="#87CEEB" stroke="#8B7355" stroke-width="3"/>
+      <line x1="250" y1="20" x2="250" y2="110" stroke="#8B7355" stroke-width="2"/>
+      <line x1="180" y1="65" x2="320" y2="65" stroke="#8B7355" stroke-width="2"/>
+      <!-- fridge --><rect x="20" y="50" width="80" height="200" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+      <rect x="25" y="55" width="70" height="95" rx="3" fill="#dfe6e9"/>
+      <rect x="25" y="155" width="70" height="90" rx="3" fill="#dfe6e9"/>
+      <circle cx="88" cy="100" r="5" fill="#bdc3c7"/>
+      <circle cx="88" cy="200" r="5" fill="#bdc3c7"/>
+      <!-- counter / sink --><rect x="340" y="130" width="140" height="120" rx="3" fill="#f5f0ea" stroke="#d4c5b0" stroke-width="2"/>
+      <rect x="355" y="145" width="55" height="40" rx="3" fill="#87CEEB" stroke="#5D9FB5" stroke-width="2"/>
+      <circle cx="382" cy="155" r="5" fill="#95a5a6"/>
+      <!-- tap --><rect x="378" y="138" width="8" height="18" rx="3" fill="#95a5a6"/>
+      <rect x="372" y="138" width="20" height="5" rx="2" fill="#7f8c8d"/>
+      <!-- table --><rect x="130" y="155" width="175" height="100" rx="8" fill="#d4a76a" stroke="#b8864e" stroke-width="2"/>
+      <!-- table legs --><rect x="140" y="250" width="12" height="45" rx="3" fill="#b8864e"/>
+      <rect x="290" y="250" width="12" height="45" rx="3" fill="#b8864e"/>
+      <!-- cup on table --><rect x="180" y="140" width="24" height="28" rx="4" fill="#e74c3c"/>
+      <rect x="178" y="138" width="28" height="6" rx="3" fill="#c0392b"/>
+      <path d="M204 153 Q215 153 215 163 Q215 168 204 168" stroke="#c0392b" stroke-width="2" fill="none"/>
+      <!-- bowl with fruits --><ellipse cx="250" cy="168" rx="38" ry="20" fill="#f9f3e3" stroke="#d4a76a" stroke-width="2"/>
+      <ellipse cx="250" cy="165" rx="35" ry="15" fill="#ffeedd"/>
+      <!-- apples in bowl --><circle cx="240" cy="158" r="11" fill="#ff4757"/>
+      <line x1="240" y1="147" x2="242" y2="143" stroke="#2ecc71" stroke-width="2"/>
+      <circle cx="262" cy="160" r="11" fill="#ff6348"/>
+      <line x1="262" y1="149" x2="264" y2="145" stroke="#2ecc71" stroke-width="2"/>
+      <!-- banana --><path d="M232 168 Q248 162 264 168" stroke="#f1c40f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- bread --><rect x="300" y="148" width="30" height="18" rx="8" fill="#f4d03f"/>
+      <ellipse cx="315" cy="148" rx="15" ry="8" fill="#f6e58d"/>
+      <!-- chairs --><rect x="100" y="190" width="55" height="8" rx="3" fill="#8B6914"/>
+      <rect x="103" y="198" width="10" height="50" rx="2" fill="#7a5c10"/>
+      <rect x="142" y="198" width="10" height="50" rx="2" fill="#7a5c10"/>
+      <rect x="103" y="190" width="10" height="40" rx="2" fill="#9B7A20"/><!-- chair back -->
+      <rect x="320" y="190" width="55" height="8" rx="3" fill="#8B6914"/>
+      <rect x="323" y="198" width="10" height="50" rx="2" fill="#7a5c10"/>
+      <rect x="362" y="198" width="10" height="50" rx="2" fill="#7a5c10"/>
+      <rect x="362" y="190" width="10" height="40" rx="2" fill="#9B7A20"/>
+    </svg>`,
+
+    bedroom:`<svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+      <rect width="500" height="320" fill="#f8f0ff"/>
+      <!-- floor --><rect y="250" width="500" height="70" fill="#c8b89a"/>
+      <!-- wall --><rect width="500" height="250" fill="#f0e8ff"/>
+      <!-- window --><rect x="30" y="25" width="100" height="75" rx="5" fill="#87CEEB" stroke="#9575cd" stroke-width="3"/>
+      <line x1="80" y1="25" x2="80" y2="100" stroke="#9575cd" stroke-width="2"/>
+      <line x1="30" y1="62" x2="130" y2="62" stroke="#9575cd" stroke-width="2"/>
+      <!-- curtains --><path d="M22 20 Q35 62 22 105" fill="#ce93d8" stroke="#ab47bc" stroke-width="1"/>
+      <path d="M138 20 Q125 62 138 105" fill="#ce93d8" stroke="#ab47bc" stroke-width="1"/>
+      <!-- wardrobe --><rect x="370" y="40" width="110" height="210" rx="5" fill="#ffe0b2" stroke="#ff8c42" stroke-width="2"/>
+      <line x1="425" y1="40" x2="425" y2="250" stroke="#ff8c42" stroke-width="2"/>
+      <circle cx="415" cy="145" r="6" fill="#ff8c42"/>
+      <circle cx="435" cy="145" r="6" fill="#ff8c42"/>
+      <!-- shoes in front of wardrobe (clearly visible on floor) -->
+      <!-- left shoe --><ellipse cx="385" cy="262" rx="18" ry="9" fill="#5D4037"/>
+      <rect x="369" y="253" width="18" height="10" rx="3" fill="#795548"/>
+      <ellipse cx="385" cy="254" rx="9" ry="5" fill="#6D4C41"/>
+      <!-- laces left --><line x1="377" y1="253" x2="379" y2="258" stroke="#fff" stroke-width="1.5"/>
+      <line x1="381" y1="252" x2="383" y2="257" stroke="#fff" stroke-width="1.5"/>
+      <!-- right shoe --><ellipse cx="415" cy="262" rx="18" ry="9" fill="#5D4037"/>
+      <rect x="399" y="253" width="18" height="10" rx="3" fill="#795548"/>
+      <ellipse cx="415" cy="254" rx="9" ry="5" fill="#6D4C41"/>
+      <!-- laces right --><line x1="407" y1="253" x2="409" y2="258" stroke="#fff" stroke-width="1.5"/>
+      <line x1="411" y1="252" x2="413" y2="257" stroke="#fff" stroke-width="1.5"/>
+      <!-- bed --><rect x="60" y="135" width="270" height="110" rx="10" fill="#7986cb"/>
+      <!-- headboard --><rect x="60" y="100" width="270" height="50" rx="8" fill="#5c6bc0"/>
+      <!-- bedding --><rect x="65" y="160" width="260" height="80" rx="8" fill="#e8eaf6"/>
+      <!-- pattern --><rect x="70" y="165" width="250" height="5" rx="2" fill="#9fa8da" opacity=".5"/>
+      <rect x="70" y="180" width="250" height="5" rx="2" fill="#9fa8da" opacity=".5"/>
+      <!-- pillow --><rect x="80" y="145" width="95" height="55" rx="12" fill="#fff"/>
+      <rect x="83" y="148" width="89" height="49" rx="10" fill="#f5f5ff"/>
+      <!-- legs --><rect x="70" y="235" width="18" height="30" rx="4" fill="#5c6bc0"/>
+      <rect x="300" y="235" width="18" height="30" rx="4" fill="#5c6bc0"/>
+      <!-- nightstand --><rect x="340" y="185" width="60" height="65" rx="5" fill="#ffcc80"/>
+      <rect x="342" y="205" width="56" height="25" rx="3" fill="#ffb74d" stroke="#ff9800" stroke-width="1"/>
+      <circle cx="370" cy="217" r="4" fill="#ff9800"/>
+      <!-- lamp on nightstand --><rect x="361" y="150" width="18" height="40" rx="2" fill="#b0bec5"/>
+      <ellipse cx="370" cy="150" rx="28" ry="12" fill="#fff9c4" stroke="#fdd835" stroke-width="2"/>
+      <ellipse cx="370" cy="162" rx="9" ry="3" fill="#fdd835"/>
+      <!-- books on nightstand --><rect x="344" y="185" width="12" height="20" rx="2" fill="#ef5350"/>
+      <rect x="354" y="183" width="12" height="22" rx="2" fill="#42a5f5"/>
+      <!-- teddy bear hint --><circle cx="200" cy="148" r="12" fill="#d4a76a"/>
+      <circle cx="193" cy="140" r="7" fill="#d4a76a"/>
+      <circle cx="207" cy="140" r="7" fill="#d4a76a"/>
+      <circle cx="190" cy="138" r="3" fill="#5D4037"/>
+      <circle cx="196" cy="137" r="3" fill="#5D4037"/>
+    </svg>`
+  };
+  return scenes[name]||'<p>Scene not found.</p>';
+}
+
+function checkTF(id, userAns, correct, expl){
+  const row=document.getElementById(id);
+  if(!row) return;
+  const done=row.dataset.done;
+  if(done==='true') return;
+  row.dataset.done='true';
+  const ok=userAns===correct;
+  row.querySelectorAll('.tf-btns button').forEach(b=>b.disabled=true);
+  showFb('fb-'+id, ok, ok?'Correct! 🌟 '+expl:'Not quite. '+expl);
+  if(ok) addPts(5);
+}
+
+function checkCount(id, correctVerb, correctNum){
+  const row=document.getElementById(id);
+  if(!row) return;
+  if(row.dataset.done==='true') return;
+  const sel=document.getElementById(id+'-v');
+  const num=document.getElementById(id+'-n');
+  if(!sel.value||!num.value){notify('Please fill in both fields!','warn');return;}
+  const okV=sel.value===correctVerb;
+  const okN=parseInt(num.value)===correctNum;
+  const ok=okV&&okN;
+  row.dataset.done='true';
+  sel.disabled=true; num.disabled=true;
+  const fb=document.getElementById('fb-'+id);
+  if(fb){
+    fb.style.display='inline';
+    fb.className='fb '+(ok?'ok':'bad')+' show';
+    fb.innerHTML=ok?'✅ Correct! 🌟':`❌ Answer: There ${correctVerb} ${correctNum}.`;
+  }
+  if(ok) addPts(10);
+}
+
+// =============================================================
+// PRACTICE
+// =============================================================
+let pracBuilt=false;
+const scrambleState={};
+
+function buildPractice(){
+  pracBuilt=true;
+  buildFill();
+  buildMCQ();
+  buildMatch();
+  buildScramble();
+  buildWrite();
+}
+
+function switchPrac(panel, btn){
+  document.querySelectorAll('.prac-panel').forEach(p=>p.style.display='none');
+  document.getElementById('prac-'+panel).style.display='block';
+  document.querySelectorAll('.prac-tab').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+}
+
+// Fill in blank
+function buildFill(){
+  const el=document.getElementById('prac-fill');
+  el.innerHTML=DATA.exercises.fill.map(ex=>{
+    const parts=ex.s.split('___');
+    return `<div class="ex-card" id="ex-${ex.id}" data-done="false">
+      <div class="ex-prompt">
+        <span class="topic-pill pill-${ex.topic}">${ex.topic}</span><br>
+      ${esc(parts[0])}<input class="fill-input" id="inp-${ex.id}" type="text" placeholder="___" data-ans="${esc(ex.ans)}">${esc(parts[1]||'')}
+      </div>
+      <div class="ex-actions">
+        <button class="btn btn-primary btn-sm" onclick="checkFill('${ex.id}','${esc(ex.ans)}','${esc(ex.hint)}')">Check ✓</button>
+        <button class="btn btn-ghost btn-sm" onclick="retryFill('${ex.id}')" style="color:var(--ink2);border:2px solid var(--border)">🔄 Retry</button>
+        <small style="color:var(--muted)">Hint: ${esc(ex.hint)}</small>
+      </div>
+      <div class="fb" id="fb-${ex.id}"></div>
+    </div>`;
+  }).join('');
+}
+
+function checkFill(id, ans, hint){
+  const card=document.getElementById('ex-'+id);
+  if(card.dataset.done==='true') return;
+  const inp=document.getElementById('inp-'+id);
+  const ok=inp.value.trim().toLowerCase()===ans.toLowerCase();
+  inp.disabled=true; inp.classList.add(ok?'ok':'bad');
+  showFb('fb-'+id, ok, ok?'Correct! 🌟':`Answer: <strong>${esc(ans)}</strong>. ${esc(hint)}`);
+  if(ok){card.dataset.done='true';ST.exs['f-'+id]={ok:true,topic:DATA.exercises.fill.find(e=>e.id===id)?.topic};addPts(5);save();}
+}
+
+function retryFill(id){
+  const card=document.getElementById('ex-'+id);
+  card.dataset.done='false';
+  const inp=document.getElementById('inp-'+id);
+  if(inp){inp.disabled=false;inp.value='';inp.classList.remove('ok','bad');}
+  clearFb('fb-'+id);
+}
+
+// Multiple choice
+function buildMCQ(){
+  const el=document.getElementById('prac-mcq');
+  el.innerHTML=DATA.exercises.mcq.map(ex=>{
+    const opts=ex.opts.map((o,j)=>`<button class="mcq-btn" onclick="checkMCQ(this,'${ex.id}',${j},${ex.ans})">${mkLetter(j)}${esc(o)}</button>`).join('');
+    return `<div class="ex-card" id="mc-${ex.id}" data-done="false" data-exp="${esc(ex.exp)}">
+      <span class="topic-pill pill-${ex.topic}">${ex.topic}</span>
+      <div class="ex-prompt">${esc(ex.q)}</div>
+      <div class="mcq-opts">${opts}</div>
+      <div class="fb" id="fb-${ex.id}"></div>
+      <div class="ex-actions" id="retry-${ex.id}" style="display:none">
+        <button class="btn btn-ghost btn-sm" onclick="retryMCQ('${ex.id}')">🔄 Try again</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function checkMCQ(btn, id, oi, ci){
+  const card=document.getElementById('mc-'+id);
+  if(card.dataset.done==='true') return;
+  card.dataset.done='true';
+  const exp = card.dataset.exp || '';
+  const ok=oi===ci;
+  btn.closest('.mcq-opts').querySelectorAll('.mcq-btn').forEach((b,j)=>{
+    b.disabled=true;
+    if(j===ci) b.classList.add('correct');
+    else if(j===oi&&!ok) b.classList.add('wrong');
+  });
+  const fbId='fb-'+id;
+  const fb=document.getElementById(fbId);
+  if(fb){fb.className='fb '+(ok?'ok':'bad')+' show';fb.innerHTML=(ok?'✅ Correct! 🌟':'❌ ')+esc(exp);}
+  const retryEl=document.getElementById('retry-'+id);
+  if(retryEl&&!ok) retryEl.style.display='';
+  ST.exs['mc-'+id]={ok,topic:DATA.exercises.mcq.find(e=>e.id===id)?.topic};
+  if(ok){addPts(5);save();}
+}
+
+function retryMCQ(id){
+  const card=document.getElementById('mc-'+id);
+  if(!card) return;
+  card.dataset.done='false';
+  card.querySelectorAll('.mcq-btn').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+  const fb=document.getElementById('fb-'+id);
+  if(fb){fb.className='fb';fb.innerHTML='';}
+  const retryEl=document.getElementById('retry-'+id);
+  if(retryEl) retryEl.style.display='none';
+}
+
+// Matching
+const matchSt={};
+function buildMatch(){
+  const el=document.getElementById('prac-match');
+  el.innerHTML=DATA.exercises.match.map(ex=>{
+    const shuffledRight=shuffle([...ex.pairs.map((p,i)=>({t:p[1],i}))]);
+    const left=ex.pairs.map((p,i)=>`
+      <div class="match-item" id="ml-${ex.id}-${i}" data-id="${ex.id}" data-side="L" data-idx="${i}" onclick="matchClick(this)">
+        ${esc(p[0])}
+      </div>`).join('');
+    const right=shuffledRight.map(p=>`
+      <div class="match-item" id="mr-${ex.id}-${p.i}" data-id="${ex.id}" data-side="R" data-idx="${p.i}" onclick="matchClick(this)">
+        ${esc(p.t)}
+      </div>`).join('');
+    const topicPill = ex.topic ? `<span class="topic-pill pill-${ex.topic}" style="margin-bottom:.6rem;display:inline-block">${ex.topic}</span><br>` : '';
+    return `<div class="ex-card" id="mc-card-${ex.id}">
+      <div class="ex-prompt">${topicPill}${esc(ex.title)}</div>
+      <div style="font-size:.8rem;color:var(--muted);margin-bottom:.75rem;background:var(--bg);padding:.5rem .75rem;border-radius:8px">
+        💡 Click a word on the <strong>left</strong>, then click its match on the <strong>right</strong>.
+      </div>
+      <div class="match-grid">
+        <div class="match-col">
+          <div class="match-label" style="color:var(--purple)">← Select</div>
+          ${left}
+        </div>
+        <div class="match-col">
+          <div class="match-label" style="color:var(--teal)">Match →</div>
+          ${right}
+        </div>
+      </div>
+      <div class="match-score" id="mscore-${ex.id}">
+        <span id="mscore-text-${ex.id}">0 / ${ex.pairs.length} matched</span>
+        <span id="mscore-stars-${ex.id}"></span>
+      </div>
+      <div class="fb" id="fb-match-${ex.id}"></div>
+      <button class="btn btn-ghost btn-sm" onclick="resetMatch('${ex.id}')" style="color:var(--ink2);border:2px solid var(--border);margin-top:.5rem">🔄 Reset</button>
+    </div>`;
+  }).join('');
+}
+
+function matchClick(el){
+  const id=el.dataset.id, side=el.dataset.side, idx=parseInt(el.dataset.idx);
+  if(el.classList.contains('matched')) return;
+  if(!matchSt[id]) matchSt[id]={L:null,R:null,done:0,wrong:0};
+  const st=matchSt[id];
+
+  if(side==='L'){
+    // Deselect previous left if any
+    if(st.L) st.L.classList.remove('selected');
+    // If clicking already-selected left, deselect it
+    if(st.L===el){ st.L=null; return; }
+    st.L=el; el.classList.add('selected');
+    // Clear any pending right
+    if(st.R){ st.R.classList.remove('selected'); st.R=null; }
+  } else {
+    if(!st.L){ 
+      // No left selected — select right and wait
+      if(st.R) st.R.classList.remove('selected');
+      st.R = (st.R===el) ? null : el;
+      if(st.R) el.classList.add('selected'); 
+      else el.classList.remove('selected');
+      return;
+    }
+    st.R=el;
+  }
+
+  if(st.L && st.R){
+    const ok = parseInt(st.L.dataset.idx) === parseInt(st.R.dataset.idx);
+    const ex = DATA.exercises.match.find(m=>m.id===id);
+    const total = ex.pairs.length;
+
+    if(ok){
+      // Matched! Style both green, lock them
+      st.L.classList.remove('selected'); 
+      st.L.classList.add('matched');
+      st.R.classList.add('matched');
+      // Add checkmark to both
+      st.L.innerHTML = '✅ ' + st.L.textContent.trim();
+      st.R.innerHTML = '✅ ' + st.R.textContent.trim();
+      st.done++;
+      const scoreText = document.getElementById('mscore-text-'+id);
+      if(scoreText) scoreText.textContent = `${st.done} / ${total} matched`;
+      st.L=null; st.R=null;
+
+      if(st.done===total){
+        // All matched!
+        const stars = st.wrong===0 ? '🌟🌟🌟 Perfect!' : st.wrong<=2 ? '🌟🌟 Great!' : '🌟 Done!';
+        const scoreStars = document.getElementById('mscore-stars-'+id);
+        if(scoreStars) scoreStars.textContent = ' ' + stars;
+        const fb = document.getElementById('fb-match-'+id);
+        if(fb){ fb.className='fb ok show'; fb.innerHTML=`✅ All matched! ${stars} +15 pts`; }
+        ST.exs['mt-'+id]={ok:true,topic:ex.topic||'mixed'};
+        addPts(15); save();
+        confetti(20);
+      }
+    } else {
+      // Wrong match — shake right, flash left red briefly
+      st.wrong = (st.wrong||0) + 1;
+      st.R.classList.add('shake');
+      st.L.style.borderColor = 'var(--red)';
+      st.L.style.background = '#fff0f0';
+      setTimeout(()=>{
+        if(st.R){ st.R.classList.remove('shake','selected'); }
+        if(st.L){ st.L.style.borderColor=''; st.L.style.background=''; st.L.classList.remove('selected'); }
+        st.L=null; st.R=null;
+      }, 500);
+    }
+  }
+}
+
+function resetMatch(id){
+  matchSt[id]={L:null,R:null,done:0,wrong:0};
+  // Rebuild the exercise to get original text back (checkmarks were added to innerHTML)
+  const ex = DATA.exercises.match.find(m=>m.id===id);
+  if(!ex) return;
+  // Restore left items
+  ex.pairs.forEach((p,i)=>{
+    const lEl = document.getElementById(`ml-${id}-${i}`);
+    if(lEl){ lEl.className='match-item'; lEl.innerHTML=esc(p[0]); lEl.style.borderColor=''; lEl.style.background=''; }
+  });
+  // Restore right items (find them by data-id and data-side)
+  document.querySelectorAll(`[data-id="${id}"][data-side="R"]`).forEach(el=>{
+    const idx = parseInt(el.dataset.idx);
+    el.className='match-item';
+    el.innerHTML = esc(ex.pairs[idx][1]);
+    el.style.borderColor=''; el.style.background='';
+  });
+  const scoreText = document.getElementById('mscore-text-'+id);
+  if(scoreText) scoreText.textContent = `0 / ${ex.pairs.length} matched`;
+  const scoreStars = document.getElementById('mscore-stars-'+id);
+  if(scoreStars) scoreStars.textContent='';
+  const fb=document.getElementById('fb-match-'+id);
+  if(fb){fb.className='fb';fb.innerHTML='';}
+}
+
+// Unscramble
+function buildScramble(){
+  const el=document.getElementById('prac-scramble');
+  el.innerHTML=DATA.exercises.scramble.map(ex=>{
+    scrambleState[ex.id]={selected:[]};
+    const chips=shuffle([...ex.words]).map(w=>`<button class="chip" onclick="scAdd('${ex.id}',this,'${esc(w)}')">${esc(w)}</button>`).join('');
+    return `<div class="ex-card" id="sc-${ex.id}" data-done="false" data-ans="${esc(ex.ans)}">
+      <span class="topic-pill pill-${ex.topic}">${ex.topic}</span>
+      <div class="ex-prompt" style="margin-top:.4rem">🔀 Put words in order: <small style="color:var(--muted)">${esc(ex.hint)}</small></div>
+      <div class="chips" id="sc-chips-${ex.id}">${chips}</div>
+      <div class="ans-zone" id="sc-ans-${ex.id}"></div>
+      <div class="ex-actions">
+        <button class="btn btn-primary btn-sm" onclick="checkScramble('${ex.id}')">Check ✓</button>
+        <button class="btn btn-ghost btn-sm" onclick="resetScramble('${ex.id}')" style="color:var(--ink2);border:2px solid var(--border)">🔄 Reset</button>
+      </div>
+      <div class="fb" id="fb-sc-${ex.id}"></div>
+    </div>`;
+  }).join('');
+}
+
+function scAdd(id, chipEl, word){
+  if(chipEl.classList.contains('used')) return;
+  chipEl.classList.add('used');
+  const zone=document.getElementById('sc-ans-'+id);
+  const ac=document.createElement('button');
+  ac.className='ans-chip'; ac.textContent=word;
+  ac.onclick=()=>{ac.remove(); chipEl.classList.remove('used');};
+  zone.appendChild(ac);
+}
+
+function checkScramble(id){
+  const card=document.getElementById('sc-'+id);
+  const ans=card.dataset.ans;
+  const words=Array.from(document.getElementById('sc-ans-'+id).querySelectorAll('.ans-chip')).map(c=>c.textContent);
+  const ok=words.join(' ').toLowerCase().replace(/[.!?]/g,'')===ans.toLowerCase().replace(/[.!?]/g,'');
+  showFb('fb-sc-'+id, ok, ok?`Correct! ✅ "${esc(ans)}"`:(`Not quite. Answer: "<strong>${esc(ans)}</strong>"`));
+  if(ok){
+    card.dataset.done='true';
+    const exData = DATA.exercises.scramble.find(e=>e.id===id);
+    ST.exs['sc-'+id]={ok:true,topic:exData?.topic||'mixed'};
+    addPts(10);save();
+  }
+}
+
+function resetScramble(id){
+  document.getElementById('sc-ans-'+id).innerHTML='';
+  document.querySelectorAll(`#sc-chips-${id} .chip`).forEach(c=>c.classList.remove('used'));
+  clearFb('fb-sc-'+id);
+}
+
+// Writing
+function buildWrite(){
+  const el=document.getElementById('prac-write');
+  el.innerHTML=DATA.exercises.write.map(ex=>`
+    <div class="writing-card">
+      <h4>✍️ <span class="topic-pill pill-${ex.topic}">${ex.topic}</span></h4>
+      <div class="writing-prompt">${esc(ex.prompt)}</div>
+      <details style="margin-bottom:.75rem">
+        <summary style="cursor:pointer;font-size:.85rem;color:var(--muted);font-weight:600">📝 See model answer</summary>
+        <div class="writing-model">"${esc(ex.model)}"</div>
+      </details>
+      <textarea class="writing-ta" id="wta-${ex.id}" placeholder="Write your answer here…"></textarea>
+      <p style="font-size:.85rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--ink2)">📋 Self-check:</p>
+      <div class="rubric">
+        ${ex.rubric.map((r,i)=>`<div class="rubric-item" id="ri-${ex.id}-${i}" onclick="toggleRubric(this)"><div class="rubric-cb"></div><span>${esc(r)}</span></div>`).join('')}
+      </div>
+      <button class="btn btn-teal btn-sm" style="margin-top:.75rem" onclick="submitWrite('${ex.id}')">✓ Submit</button>
+      <div class="fb" id="fb-w-${ex.id}"></div>
+    </div>`).join('');
+}
+
+function toggleRubric(el){el.classList.toggle('checked');}
+
+function submitWrite(id){
+  const ta=document.getElementById('wta-'+id);
+  if(!ta||!ta.value.trim()){notify('Please write something first! ✏️','warn');return;}
+  const checked=document.querySelectorAll(`[id^="ri-${id}-"].checked`).length;
+  const total=DATA.exercises.write.find(e=>e.id===id).rubric.length;
+  showFb('fb-w-'+id, true, `✅ Submitted! ${checked}/${total} criteria checked. ${checked===total?'🌟 Excellent!':'Keep improving!'}`);
+  ST.exs['w-'+id]={ok:checked>=total-1};
+  addPts(checked*3); save();
+}
+
+// =============================================================
+// GAMES
+// =============================================================
+let gamesBuilt=false;
+let bldrTimer=null;
+
+function buildGames(){
+  gamesBuilt=true;
+  const el=document.getElementById('games-grid');
+  el.innerHTML=`
+  <div class="game-card game-1" onclick="openGame('find')" tabindex="0" onkeydown="if(event.key==='Enter')openGame('find')">
+    <div class="game-banner">🔍</div>
+    <div class="game-body"><h3>Find the Objects</h3><p>Find all objects hidden in the classroom scene!</p><span class="game-score-badge">⭐ Best: ${ST.games.find||0} pts</span></div>
+  </div>
+  <div class="game-card game-2" onclick="openGame('detective')" tabindex="0" onkeydown="if(event.key==='Enter')openGame('detective')">
+    <div class="game-banner">🕵️</div>
+    <div class="game-body"><h3>Classroom Detective</h3><p>Answer questions about the classroom scene using verb to be!</p><span class="game-score-badge">⭐ Best: ${ST.games.detective||0} pts</span></div>
+  </div>
+  <div class="game-card game-3" onclick="openGame('builder')" tabindex="0" onkeydown="if(event.key==='Enter')openGame('builder')">
+    <div class="game-banner">🏗️</div>
+    <div class="game-body"><h3>Sentence Builder</h3><p>Build correct sentences against the clock!</p><span class="game-score-badge">⭐ Best: ${ST.games.builder||0} pts</span></div>
+  </div>
+  <div class="game-card game-4" onclick="openGame('prepchallenge')" tabindex="0" onkeydown="if(event.key==='Enter')openGame('prepchallenge')">
+    <div class="game-banner">📍</div>
+    <div class="game-body"><h3>Preposition Challenge</h3><p>Choose the right preposition for each scene!</p><span class="game-score-badge">⭐ Best: ${ST.games.prepchallenge||0} pts</span></div>
+  </div>`;
+}
+
+function openGame(id){
+  const modal=document.getElementById('game-modal');
+  const title=document.getElementById('modal-title');
+  const body=document.getElementById('modal-body');
+  if(bldrTimer) clearInterval(bldrTimer);
+  modal.classList.add('open');
+  const games={
+    find:{title:'🔍 Find the Objects', fn:buildFindGame},
+    detective:{title:'🕵️ Classroom Detective', fn:buildDetectiveGame},
+    builder:{title:'🏗️ Sentence Builder Race', fn:buildBuilderGame},
+    prepchallenge:{title:'📍 Preposition Challenge', fn:buildPrepGame}
+  };
+  const g=games[id];
+  if(g){title.textContent=g.title;body.innerHTML=g.fn();}
+  if(id==='builder') startBuilderTimer();
+}
+
+function closeModal(){
+  document.getElementById('game-modal').classList.remove('open');
+  if(bldrTimer) clearInterval(bldrTimer);
+}
+
+// Game 1 — Find objects
+const FIND_OBJECTS=['book','apple','chair','pencil','bag','ruler','desk','blackboard'];
+let findSt={found:[],score:0};
+
+function buildFindGame(){
+  findSt={found:[],score:0};
+  return `
+  <div class="game-hud"><span>🔍 Found: <span id="found-ct">0</span>/${FIND_OBJECTS.length}</span><span class="game-timer" id="found-score">Score: 0</span></div>
+  ${getSceneSVG('classroom')}
+  <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin:.75rem 0" id="find-targets">
+    ${FIND_OBJECTS.map(o=>`<span id="ftgt-${o}" style="background:var(--bg);border:2px solid var(--border);border-radius:8px;padding:.3rem .6rem;font-size:.82rem;font-weight:700;color:var(--muted)">${o}</span>`).join('')}
+  </div>
+  <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.75rem">
+    <input class="fill-input" id="find-inp" type="text" placeholder="Type an object name…" style="width:200px" onkeydown="if(event.key==='Enter')checkFindObj()">
+    <button class="btn btn-primary btn-sm" onclick="checkFindObj()">Found it! 🔍</button>
+  </div>
+  <div id="find-fb" style="margin-top:.5rem;font-weight:600;font-size:.88rem"></div>`;
+}
+
+function checkFindObj(){
+  const inp=document.getElementById('find-inp');
+  const val=inp.value.trim().toLowerCase();
+  const fb=document.getElementById('find-fb');
+  if(!val) return;
+  if(FIND_OBJECTS.includes(val)&&!findSt.found.includes(val)){
+    findSt.found.push(val); findSt.score+=10;
+    const tgt=document.getElementById('ftgt-'+val);
+    if(tgt){tgt.style.background='#f0fff5';tgt.style.borderColor='var(--green)';tgt.style.color='var(--green)';}
+    document.getElementById('found-ct').textContent=findSt.found.length;
+    document.getElementById('found-score').textContent=`Score: ${findSt.score}`;
+    fb.innerHTML=`<span style="color:var(--green)">✅ "${val}" found! +10 pts</span>`;
+    if(findSt.found.length===FIND_OBJECTS.length){
+      fb.innerHTML='<span style="color:var(--green)">🎉 You found EVERYTHING! Amazing!</span>';
+      confetti(30); updateHiScore('find',findSt.score); addPts(findSt.score);
+    }
+  } else if(findSt.found.includes(val)){
+    fb.innerHTML=`<span style="color:var(--orange)">Already found "${val}"! Try another.</span>`;
+  } else {
+    fb.innerHTML=`<span style="color:var(--red)">❌ "${val}" is not in the list. Try again!</span>`;
+  }
+  inp.value=''; inp.focus();
+}
+
+// Game 2 — Detective
+const DET_QS=[
+  {q:'Is there a blackboard in the classroom?',ans:'yes',alts:['yes','yeah','yep','there is','yes there is'],e:'Yes! There IS a blackboard — the big green board.'},
+  {q:'Are there any students in the classroom?',ans:'no',alts:['no','nope','no there aren\'t','there aren\'t'],e:"No, there aren't any students — only furniture."},
+  {q:'Where is the apple? (on / under / next to)',ans:'on',alts:['on','on the desk','on a desk','it is on','it\'s on'],e:"The apple is ON the teacher's desk."},
+  {q:'How many desks are there? (write a number)',ans:'3',alts:['3','three','4','four','3 desks','4 desks','three desks','four desks'],e:'There are 3 student desks plus 1 teacher desk = 4 total. Both 3 and 4 are accepted!'},
+  {q:'Are there any books in the classroom?',ans:'yes',alts:['yes','yeah','yep','there are','yes there are'],e:'Yes! There are books on the desks.'},
+  {q:'Is the bag on or under a desk?',ans:'under',alts:['under','under the desk','it is under','it\'s under'],e:'The bag is UNDER the desk.'}
+];
+let detSt={idx:0,score:0};
+
+function buildDetectiveGame(){
+  detSt={idx:0,score:0};
+  return `<div class="game-hud"><span>🕵️ Score: <span id="det-score">0</span>/${DET_QS.length}</span><span>Q <span id="det-qn">1</span>/${DET_QS.length}</span></div>
+  ${getSceneSVG('classroom')}
+  <div id="det-area">${buildDetQ(0)}</div>`;
+}
+
+function buildDetQ(i){
+  if(i>=DET_QS.length){
+    const pts=detSt.score*10; updateHiScore('detective',pts); addPts(pts);
+    return `<div style="text-align:center;padding:2rem"><div style="font-size:3rem">🕵️</div><h3>Case solved!</h3><p><strong>${detSt.score}/${DET_QS.length}</strong> correct! +${pts} pts</p><button class="btn btn-primary" style="margin-top:1rem" onclick="document.getElementById('modal-body').innerHTML=buildDetectiveGame()">🔄 Play Again</button></div>`;
+  }
+  return `<div class="ex-card" style="margin-top:1rem">
+    <div class="ex-prompt">${esc(DET_QS[i].q)}</div>
+    <div style="font-size:.78rem;color:var(--muted);margin-bottom:.5rem">💡 Short answers accepted: <em>yes / no / on / under / a number…</em></div>
+    <div class="ex-actions">
+      <input class="fill-input" id="det-inp" type="text" placeholder="Type your answer…" onkeydown="if(event.key==='Enter')submitDet(${i})" autocomplete="off">
+      <button class="btn btn-primary btn-sm" onclick="submitDet(${i})">Check ✓</button>
+    </div>
+    <div class="fb" id="det-fb"></div>
+  </div>`;
+}
+
+function submitDet(i){
+  const inp=document.getElementById('det-inp');
+  if(!inp) return;
+  const q=DET_QS[i];
+  const raw=inp.value.trim().toLowerCase();
+  // Accept short answers: 'yes'/'no', number, single word, or full answer
+  const accepted=(q.alts||[]).concat([q.ans.toLowerCase()]);
+  const ok = accepted.some(a => raw === a || raw.startsWith(a) || a.startsWith(raw));
+  const fb=document.getElementById('det-fb');
+  if(fb){fb.className='fb '+(ok?'ok':'bad')+' show';fb.innerHTML=(ok?'✅ ':'❌ ')+esc(q.e);}
+  if(ok) detSt.score++;
+  document.getElementById('det-score').textContent=detSt.score;
+  inp.disabled=true;
+  setTimeout(()=>{
+    detSt.idx++;
+    const qnEl=document.getElementById('det-qn');
+    if(qnEl&&detSt.idx<DET_QS.length) qnEl.textContent=detSt.idx+1;
+    document.getElementById('det-area').innerHTML=buildDetQ(detSt.idx);
+  },1800);
+}
+
+// Game 3 — Builder
+const BLDR_SENTENCES=[
+  {words:['I','am','a','student'],ans:'I am a student'},
+  {words:['She','is','nice'],ans:'She is nice'},
+  {words:['There','is','a','book','on','the','desk'],ans:'There is a book on the desk'},
+  {words:['They','are','happy'],ans:'They are happy'},
+  {words:['The','cat','is','under','the','table'],ans:'The cat is under the table'},
+  {words:['Is','he','a','teacher'],ans:'Is he a teacher'},
+  {words:['There','are','two','chairs'],ans:'There are two chairs'},
+  {words:['I','have','an','apple'],ans:'I have an apple'}
+];
+let bldrSt={idx:0,score:0,time:90};
+
+function buildBuilderGame(){
+  bldrSt={idx:0,score:0,time:90};
+  return `<div class="game-hud"><span>🏗️ Score: <span id="bldr-score">0</span></span><span class="game-timer">⏱ <span id="bldr-time">90</span>s</span></div>
+  <div id="bldr-area">${buildBldrQ(0)}</div>`;
+}
+
+function buildBldrQ(i){
+  if(i>=BLDR_SENTENCES.length){
+    if(bldrTimer) clearInterval(bldrTimer);
+    const pts=bldrSt.score*8; updateHiScore('builder',pts); addPts(pts);
+    return `<div style="text-align:center;padding:2rem"><div style="font-size:3rem">🏆</div><h3>Finished!</h3><p>Score: <strong>${bldrSt.score}/${BLDR_SENTENCES.length}</strong> +${pts} pts</p><button class="btn btn-primary" style="margin-top:1rem" onclick="document.getElementById('modal-body').innerHTML=buildBuilderGame();startBuilderTimer()">🔄 Play Again</button></div>`;
+  }
+  const s=BLDR_SENTENCES[i];
+  const chips=shuffle([...s.words]).map(w=>`<button class="chip" onclick="bldrAdd(this,'${esc(w)}')">${esc(w)}</button>`).join('');
+  return `<p style="font-size:.82rem;color:var(--muted);margin-bottom:.5rem">Q ${i+1}/${BLDR_SENTENCES.length} — Build the sentence!</p>
+  <div class="chips" id="bldr-chips">${chips}</div>
+  <div class="ans-zone" id="bldr-ans"></div>
+  <div class="ex-actions">
+    <button class="btn btn-primary btn-sm" onclick="checkBldr(${i})">Check ✓</button>
+    <button class="btn btn-ghost btn-sm" onclick="clearBldr()" style="color:var(--ink2);border:2px solid var(--border)">🗑 Clear</button>
+  </div>
+  <div class="fb" id="bldr-fb"></div>`;
+}
+
+function bldrAdd(chip,word){
+  if(chip.classList.contains('used')) return;
+  chip.classList.add('used');
+  const zone=document.getElementById('bldr-ans');
+  const ac=document.createElement('button'); ac.className='ans-chip'; ac.textContent=word;
+  ac.onclick=()=>{ac.remove();chip.classList.remove('used');};
+  zone.appendChild(ac);
+}
+function clearBldr(){
+  const ans=document.getElementById('bldr-ans');
+  if(ans) ans.innerHTML='';
+  document.querySelectorAll('#bldr-chips .chip').forEach(c=>c.classList.remove('used'));
+}
+function checkBldr(i){
+  const s=BLDR_SENTENCES[i];
+  const words=Array.from(document.getElementById('bldr-ans').querySelectorAll('.ans-chip')).map(c=>c.textContent);
+  const ok=words.join(' ').toLowerCase()===s.ans.toLowerCase();
+  const fb=document.getElementById('bldr-fb');
+  if(fb){fb.className='fb '+(ok?'ok':'bad')+' show';fb.innerHTML=(ok?'✅ Correct! 🌟':`❌ Answer: "${esc(s.ans)}"`);}
+  if(ok){bldrSt.score++;const sc=document.getElementById('bldr-score');if(sc)sc.textContent=bldrSt.score;}
+  setTimeout(()=>{bldrSt.idx++;const area=document.getElementById('bldr-area');if(area)area.innerHTML=buildBldrQ(bldrSt.idx);},1600);
+}
+
+function startBuilderTimer(){
+  if(bldrTimer) clearInterval(bldrTimer);
+  bldrSt.time=90;
+  bldrTimer=setInterval(()=>{
+    bldrSt.time--;
+    const el=document.getElementById('bldr-time'); if(el) el.textContent=bldrSt.time;
+    if(bldrSt.time<=0){
+      clearInterval(bldrTimer);
+      const pts=bldrSt.score*8; updateHiScore('builder',pts); addPts(pts);
+      const area=document.getElementById('bldr-area');
+      if(area) area.innerHTML=`<div style="text-align:center;padding:2rem"><div style="font-size:3rem">⏱️</div><h3>Time's up!</h3><p>Score: <strong>${bldrSt.score}</strong> +${pts} pts</p><button class="btn btn-primary" style="margin-top:1rem" onclick="document.getElementById('modal-body').innerHTML=buildBuilderGame();startBuilderTimer()">🔄 Play Again</button></div>`;
+    }
+  },1000);
+}
+
+// Game 4 — Prep challenge
+// ── PREPOSITION CHALLENGE — Visual SVG scenes ──────────────────
+// Each question has: an SVG image showing the scene, a fill-in sentence, and 4 button choices.
+// The highlighted object (red glow) is what students must describe.
+
+function prepSVG_bookON(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- desk --><rect x="40" y="110" width="200" height="18" rx="4" fill="#c8a96e"/><rect x="55" y="128" width="14" height="40" rx="3" fill="#b8994e"/><rect x="211" y="128" width="14" height="40" rx="3" fill="#b8994e"/>
+    <!-- book ON the desk (highlighted) -->
+    <filter id="glow1"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <rect x="100" y="90" width="80" height="20" rx="3" fill="#e74c3c" filter="url(#glow1)" stroke="#ff0000" stroke-width="2"/>
+    <rect x="103" y="93" width="74" height="14" rx="2" fill="#ff6b6b"/>
+    <text x="140" y="104" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">BOOK</text>
+    <!-- label --><text x="140" y="165" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600">Where is the book? 📕</text>
+  </svg>`;
+}
+
+function prepSVG_catUNDER(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- table --><rect x="30" y="80" width="220" height="16" rx="4" fill="#c8a96e"/><rect x="45" y="96" width="14" height="60" rx="3" fill="#b8994e"/><rect x="221" y="96" width="14" height="60" rx="3" fill="#b8994e"/>
+    <!-- cat UNDER the table (highlighted) -->
+    <filter id="glow2"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g filter="url(#glow2)">
+      <ellipse cx="140" cy="128" rx="30" ry="18" fill="#f4a435"/>
+      <circle cx="140" cy="112" r="14" fill="#f4a435"/>
+      <!-- ears --><polygon points="129,102 124,92 134,98" fill="#f4a435"/><polygon points="151,102 156,92 146,98" fill="#f4a435"/>
+      <!-- face --><circle cx="135" cy="111" r="3" fill="#2c3e50"/><circle cx="145" cy="111" r="3" fill="#2c3e50"/>
+      <path d="M137 118 Q140 121 143 118" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+      <!-- tail --><path d="M168 125 Q185 110 182 128" stroke="#f4a435" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+    <rect x="30" y="80" width="220" height="16" rx="4" fill="#c8a96e" opacity="0.6"/>
+    <text x="140" y="168" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600">Where is the cat? 🐱</text>
+  </svg>`;
+}
+
+function prepSVG_appleIN(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- box --><rect x="80" y="85" width="120" height="75" rx="5" fill="#d4a76a" stroke="#b8864e" stroke-width="2"/>
+    <rect x="80" y="85" width="120" height="20" rx="5" fill="#c8964e"/>
+    <rect x="82" y="87" width="116" height="16" rx="4" fill="#b8864e" opacity="0.4"/>
+    <!-- apple IN the box (highlighted) -->
+    <filter id="glow3"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g filter="url(#glow3)">
+      <circle cx="140" cy="138" r="22" fill="#ff4757" stroke="#ff0000" stroke-width="2"/>
+      <ellipse cx="140" cy="116" rx="5" ry="8" fill="#2ecc71"/>
+      <path d="M140 116 Q145 112 148 116" stroke="#27ae60" stroke-width="1.5" fill="none"/>
+    </g>
+    <text x="140" y="174" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600">Where is the apple? 🍎</text>
+  </svg>`;
+}
+
+function prepSVG_dogBEHIND(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- sofa front --><rect x="40" y="100" width="200" height="55" rx="8" fill="#9575cd"/><rect x="40" y="88" width="200" height="22" rx="8" fill="#7c4dff"/><rect x="40" y="105" width="25" height="50" rx="5" fill="#7c4dff"/><rect x="215" y="105" width="25" height="50" rx="5" fill="#7c4dff"/>
+    <!-- dog BEHIND sofa — only top of head visible -->
+    <filter id="glow4"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g filter="url(#glow4)">
+      <circle cx="140" cy="84" r="20" fill="#d4a76a" stroke="#ff6600" stroke-width="2"/>
+      <ellipse cx="127" cy="76" rx="7" ry="10" fill="#c8964e"/>
+      <ellipse cx="153" cy="76" rx="7" ry="10" fill="#c8964e"/>
+      <circle cx="134" cy="85" r="3" fill="#2c3e50"/><circle cx="146" cy="85" r="3" fill="#2c3e50"/>
+      <circle cx="140" cy="91" r="4" fill="#c8964e"/>
+    </g>
+    <!-- sofa back panel covering body --><rect x="40" y="88" width="200" height="22" rx="8" fill="#7c4dff" opacity="0.95"/>
+    <text x="140" y="172" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600">Where is the dog? 🐶</text>
+  </svg>`;
+}
+
+function prepSVG_lampNEXTTO(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- nightstand --><rect x="80" y="100" width="70" height="65" rx="5" fill="#ffcc80" stroke="#ff9800" stroke-width="1.5"/>
+    <rect x="82" y="118" width="66" height="25" rx="3" fill="#ffb74d"/>
+    <!-- lamp NEXT TO the nightstand (highlighted) -->
+    <filter id="glow5"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g filter="url(#glow5)">
+      <rect x="172" y="115" width="10" height="50" rx="3" fill="#90a4ae" stroke="#ff6600" stroke-width="1.5"/>
+      <ellipse cx="177" cy="112" rx="30" ry="13" fill="#fff9c4" stroke="#fdd835" stroke-width="2"/>
+      <ellipse cx="177" cy="125" rx="5" ry="3" fill="#fdd835"/>
+      <!-- glow --><ellipse cx="177" cy="112" rx="30" ry="13" fill="#fff176" opacity="0.4"/>
+    </g>
+    <text x="140" y="174" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600">Where is the lamp? 💡</text>
+  </svg>`;
+}
+
+function prepSVG_ballBETWEEN(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- floor line --><line x1="0" y1="152" x2="280" y2="152" stroke="#ddd" stroke-width="2"/>
+    <!-- chair left --><rect x="30" y="105" width="70" height="8" rx="3" fill="#8B6914"/><rect x="35" y="113" width="12" height="38" rx="2" fill="#7a5c10"/><rect x="83" y="113" width="12" height="38" rx="2" fill="#7a5c10"/><rect x="35" y="105" width="12" height="35" rx="2" fill="#9B7A20"/>
+    <!-- chair right --><rect x="180" y="105" width="70" height="8" rx="3" fill="#8B6914"/><rect x="185" y="113" width="12" height="38" rx="2" fill="#7a5c10"/><rect x="233" y="113" width="12" height="38" rx="2" fill="#7a5c10"/><rect x="233" y="105" width="12" height="35" rx="2" fill="#9B7A20"/>
+    <!-- ball BETWEEN the two chairs (highlighted) -->
+    <filter id="glow6"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g filter="url(#glow6)">
+      <circle cx="140" cy="133" r="18" fill="#ff4757" stroke="#ff0000" stroke-width="2"/>
+      <path d="M126 125 Q140 120 154 125" stroke="#fff" stroke-width="1.5" fill="none"/>
+      <path d="M124 135 Q140 145 156 135" stroke="#fff" stroke-width="1.5" fill="none"/>
+    </g>
+    <text x="140" y="174" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600">Where is the ball? ⚽</text>
+  </svg>`;
+}
+
+function prepSVG_studentINFRONT(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- blackboard --><rect x="30" y="25" width="220" height="100" rx="5" fill="#2d5a27" stroke="#5D4037" stroke-width="3"/>
+    <text x="140" y="65" text-anchor="middle" fill="#a8d5a2" font-size="13" font-weight="bold">am / is / are</text>
+    <text x="140" y="90" text-anchor="middle" fill="#fff" font-size="10">I am a student.</text>
+    <text x="140" y="108" text-anchor="middle" fill="#fff" font-size="10">She is nice.</text>
+    <!-- student IN FRONT OF the board (highlighted) -->
+    <filter id="glow7"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g filter="url(#glow7)">
+      <!-- body --><rect x="122" y="136" width="36" height="35" rx="5" fill="#3498db" stroke="#ff6600" stroke-width="2"/>
+      <!-- head --><circle cx="140" cy="125" r="16" fill="#f4d03f"/>
+      <!-- hair --><rect x="124" y="112" width="32" height="8" rx="4" fill="#2c3e50"/>
+      <!-- eyes --><circle cx="134" cy="124" r="3" fill="#2c3e50"/><circle cx="146" cy="124" r="3" fill="#2c3e50"/>
+      <!-- smile --><path d="M134 131 Q140 136 146 131" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+      <!-- arms --><rect x="100" y="136" width="22" height="10" rx="5" fill="#3498db"/><rect x="158" y="136" width="22" height="10" rx="5" fill="#3498db"/>
+      <!-- legs --><rect x="127" y="168" width="12" height="10" rx="3" fill="#2c3e50"/><rect x="141" y="168" width="12" height="10" rx="3" fill="#2c3e50"/>
+    </g>
+    <text x="140" y="175" text-anchor="middle" fill="#8888aa" font-size="10" font-weight="600">Where is the student? 🧑‍🎓</text>
+  </svg>`;
+}
+
+function prepSVG_keysIN(){
+  return `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+    <rect width="280" height="180" fill="#f7f5ff"/>
+    <!-- bag --><rect x="70" y="55" width="140" height="110" rx="12" fill="#8B4513" stroke="#6B3410" stroke-width="2"/>
+    <!-- bag flap --><path d="M70 55 Q140 35 210 55" fill="#6B3410" stroke="#5a2d00" stroke-width="1.5"/>
+    <!-- bag pocket --><rect x="90" y="100" width="100" height="45" rx="8" fill="#7a3b10"/>
+    <rect x="130" y="88" width="20" height="18" rx="3" fill="#c8a96e"/>
+    <!-- zipper --><circle cx="140" cy="98" r="6" fill="#ffd700" stroke="#b8960a" stroke-width="1.5"/>
+    <!-- handle --><path d="M105 55 Q140 30 175 55" stroke="#5a2d00" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- keys IN the bag (highlighted, peeking out of pocket) -->
+    <filter id="glow8"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g filter="url(#glow8)">
+      <circle cx="113" cy="110" r="9" fill="none" stroke="#ffd700" stroke-width="3"/>
+      <rect x="120" y="108" width="22" height="5" rx="2" fill="#ffd700"/>
+      <rect x="136" y="108" width="5" height="8" rx="1" fill="#ffd700"/>
+      <rect x="129" y="108" width="5" height="6" rx="1" fill="#ffd700"/>
+      <!-- glow --><circle cx="113" cy="110" r="9" fill="none" stroke="#ff6600" stroke-width="1" opacity="0.7"/>
+    </g>
+    <text x="140" y="174" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600">Where are the keys? 🔑</text>
+  </svg>`;
+}
+
+const PREP_QS=[
+  {svg:prepSVG_bookON,    subject:'The book',   opts:['in','on','under','behind'],       ans:1, noun:'the desk',    e:'ON = on a surface. The book is ON the desk. ✅'},
+  {svg:prepSVG_catUNDER,  subject:'The cat',    opts:['on','next to','under','between'],  ans:2, noun:'the table',   e:'UNDER = below something. The cat is UNDER the table. ✅'},
+  {svg:prepSVG_appleIN,   subject:'The apple',  opts:['on','behind','in','next to'],      ans:2, noun:'the box',     e:'IN = inside. The apple is IN the box. ✅'},
+  {svg:prepSVG_dogBEHIND, subject:'The dog',    opts:['in front of','on','next to','behind'], ans:3, noun:'the sofa', e:'BEHIND = at the back. The dog is BEHIND the sofa. ✅'},
+  {svg:prepSVG_lampNEXTTO,subject:'The lamp',   opts:['under','between','next to','in'],  ans:2, noun:'the nightstand', e:'NEXT TO = beside. The lamp is NEXT TO the nightstand. ✅'},
+  {svg:prepSVG_ballBETWEEN,subject:'The ball',  opts:['behind','between','on','in front of'], ans:1, noun:'the chairs', e:'BETWEEN = in the middle of two things. ✅'},
+  {svg:prepSVG_studentINFRONT,subject:'The student', opts:['behind','under','in front of','next to'], ans:2, noun:'the board', e:'IN FRONT OF = facing something. The student is IN FRONT OF the board. ✅'},
+  {svg:prepSVG_keysIN,    subject:'The keys',   opts:['on','next to','behind','in'],      ans:3, noun:'the bag',     e:'IN = inside. The keys are IN the bag. ✅'},
+];
+
+let prepSt={idx:0,score:0};
+
+function buildPrepGame(){
+  prepSt={idx:0,score:0};
+  return `
+  <style>
+    .prep-scene{border-radius:12px;overflow:hidden;border:2px solid var(--border);margin-bottom:1rem;background:#f7f5ff}
+    .prep-sentence{text-align:center;font-size:1.1rem;font-weight:800;color:var(--ink);margin:.75rem 0;padding:.5rem;background:var(--bg);border-radius:10px;border:2px dashed var(--border)}
+    .prep-sentence .blank{display:inline-block;min-width:80px;border-bottom:3px solid var(--purple);color:var(--purple);font-size:1.2rem;padding:0 .3rem;margin:0 .3rem}
+    .prep-opts{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:.75rem}
+    .prep-btn{background:var(--bg);border:2px solid var(--border);border-radius:12px;padding:.75rem .5rem;font-size:.95rem;font-weight:800;color:var(--ink);cursor:pointer;transition:all .2s;font-family:var(--font-b);text-align:center}
+    .prep-btn:hover:not(:disabled){background:#f0ebff;border-color:var(--purple);transform:translateY(-2px)}
+    .prep-btn.correct{background:#f0fff5;border-color:var(--green);color:var(--green)}
+    .prep-btn.wrong{background:#fff0f0;border-color:var(--red);color:var(--red)}
+    .prep-btn:disabled{cursor:not-allowed}
+  </style>
+  <div class="game-hud">
+    <span>📍 Score: <span id="prep-score">0</span> / ${PREP_QS.length}</span>
+    <span>Q <span id="prep-qn">1</span> / ${PREP_QS.length}</span>
+  </div>
+  <div id="prep-area">${buildPrepQ(0)}</div>`;
+}
+
+function buildPrepQ(i){
+  if(i>=PREP_QS.length){
+    const pts=prepSt.score*10;
+    updateHiScore('prepchallenge',pts); addPts(pts);
+    const stars = prepSt.score===PREP_QS.length ? '🌟🌟🌟' : prepSt.score>=6 ? '🌟🌟' : '🌟';
+    return `<div style="text-align:center;padding:2rem">
+      <div style="font-size:3.5rem;margin-bottom:.5rem">${stars}</div>
+      <h3>Challenge Complete!</h3>
+      <p style="font-size:1.3rem;margin:.5rem 0;color:var(--purple);font-weight:800">${prepSt.score} / ${PREP_QS.length} correct!</p>
+      <p style="color:var(--muted);margin-bottom:1.5rem">+${pts} points earned</p>
+      <button class="btn btn-primary btn-lg" onclick="document.getElementById('modal-body').innerHTML=buildPrepGame()">🔄 Play Again</button>
+    </div>`;
+  }
+  const q=PREP_QS[i];
+  const opts=q.opts.map((o,j)=>`<button class="prep-btn" onclick="checkPrepQ(this,${i},${j},${q.ans},'${o.replace(/'/g,"\\'")}','${q.e.replace(/'/g,"\\'")}')">${o}</button>`).join('');
+  return `<div data-done="false">
+    <div class="prep-scene">${q.svg()}</div>
+    <div class="prep-sentence">${esc(q.subject)} is <span class="blank" id="prep-blank-${i}">___</span> ${esc(q.noun)}.</div>
+    <div class="prep-opts" id="prep-opts-${i}">${opts}</div>
+    <div class="fb" id="prep-fb-${i}"></div>
+  </div>`;
+}
+
+function checkPrepQ(btn,i,oi,ci,chosen,exp){
+  const area=document.getElementById('prep-area');
+  const card=area?.firstElementChild;
+  if(!card||card.dataset.done==='true') return;
+  card.dataset.done='true';
+  const ok=oi===ci;
+  document.querySelectorAll(`#prep-opts-${i} .prep-btn`).forEach((b,j)=>{
+    b.disabled=true;
+    if(j===ci) b.classList.add('correct');
+    else if(j===oi&&!ok) b.classList.add('wrong');
+  });
+  // Fill in the blank with chosen answer
+  const blank=document.getElementById(`prep-blank-${i}`);
+  if(blank){blank.textContent=chosen;blank.style.borderColor=ok?'var(--green)':'var(--red)';blank.style.color=ok?'var(--green)':'var(--red)';}
+  const fb=document.getElementById(`prep-fb-${i}`);
+  if(fb){fb.className='fb '+(ok?'ok':'bad')+' show';fb.innerHTML=(ok?'✅ ':'❌ ')+exp;}
+  if(ok){prepSt.score++;const sc=document.getElementById('prep-score');if(sc)sc.textContent=prepSt.score;}
+  setTimeout(()=>{
+    prepSt.idx++;
+    const qn=document.getElementById('prep-qn');if(qn&&prepSt.idx<PREP_QS.length)qn.textContent=prepSt.idx+1;
+    const a=document.getElementById('prep-area');if(a)a.innerHTML=buildPrepQ(prepSt.idx);
+  },2000);
+}
+
+function updateHiScore(game, score){
+  if(score>(ST.games[game]||0)){
+    ST.games[game]=score; save();
+    // Refresh score badge if games grid is visible
+    const grid=document.getElementById('games-grid');
+    if(grid) grid.querySelectorAll('.game-score-badge').forEach(b=>{
+      const gameMap={find:'find',detective:'detective',builder:'builder',prepchallenge:'prepchallenge'};
+      // Can't target specific one easily, but rebuildGames will refresh on next visit
+    });
+  }
+}
+
+// =============================================================
+// FINAL QUIZ
+// =============================================================
+let quizAns={};
+
+function buildQuiz(){
+  const el=document.getElementById('quiz-container');
+  if(ST.quiz){
+    el.innerHTML=buildQuizResults();
+  } else {
+    el.innerHTML=buildQuizStart();
+  }
+}
+
+function buildQuizStart(){
+  return `<div class="quiz-start-card">
+    <div style="font-size:4rem;margin-bottom:.75rem">📝</div>
+    <h2>Final Quiz</h2>
+    <p style="color:var(--muted);margin:.75rem 0">15 questions covering all 4 topics. <br>You have <strong>ONE attempt</strong>.</p>
+    <div class="quiz-warning">
+      <strong>⚠️ Important!</strong><br>
+      Once you start, you cannot stop. Make sure you have studied all lessons first!<br>
+      <em>(¡Una sola oportunidad! Estudia todo antes de empezar.)</em>
+    </div>
+    <button class="btn btn-primary btn-lg" style="margin-top:1rem" onclick="startQuiz()">🚀 Start Quiz!</button>
+  </div>`;
+}
+
+function startQuiz(){
+  quizAns={};
+  document.getElementById('quiz-container').innerHTML=buildQuizQ(0);
+}
+
+function buildQuizQ(i){
+  const qs=DATA.quiz;
+  if(i>=qs.length) return finalizeQuiz();
+  const q=qs[i];
+  const pct=Math.round((i/qs.length)*100);
+  let bodyHtml='';
+  if(q.type==='mcq'){
+    bodyHtml=`<div class="mcq-opts" id="fqopts-${i}">
+      ${q.opts.map((o,j)=>`<button class="mcq-btn" onclick="fqMCQ(this,${i},${j},${q.ans})">${mkLetter(j)}${esc(o)}</button>`).join('')}
+    </div>`;
+  } else if(q.type==='fill'){
+    bodyHtml=`<div class="ex-actions">
+      <input class="fill-input" id="fq-inp-${i}" type="text" placeholder="Your answer…" onkeydown="if(event.key==='Enter')fqFill(${i},'${esc(q.ans)}')">
+      <button class="btn btn-primary btn-sm" onclick="fqFill(${i},'${esc(q.ans)}')">Check ✓</button>
+    </div>`;
+  } else {
+    bodyHtml=`<div>
+      <textarea class="writing-ta" id="fq-writ-${i}" placeholder="Write your answer here…" style="min-height:100px"></textarea>
+      <div class="writing-model" style="margin-top:.5rem">💡 Model: "${esc(q.model)}"</div>
+      <div class="rubric" style="margin:.75rem 0">
+        ${q.rubric.map((r,j)=>`<div class="rubric-item" id="fqri-${i}-${j}" onclick="this.classList.toggle('checked')"><div class="rubric-cb"></div><span>${esc(r)}</span></div>`).join('')}
+      </div>
+      <button class="btn btn-teal btn-sm" onclick="fqWrite(${i})">Submit Writing ✓</button>
+    </div>`;
+  }
+  return `<div class="quiz-q-counter">Question ${i+1} of ${qs.length} • <span class="topic-pill pill-${q.topic}">${q.topic}</span> • ${q.pts} pt${q.pts>1?'s':''}</div>
+  <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${pct}%"></div></div>
+  <div class="ex-card">
+    <div class="ex-prompt" style="font-size:1rem">${esc(q.q)}</div>
+    ${bodyHtml}
+    <div class="fb" id="fq-fb-${i}"></div>
+  </div>`;
+}
+
+function fqMCQ(btn,i,oi,ci){
+  const fb=document.getElementById(`fq-fb-${i}`);
+  if(fb&&fb.classList.contains('show')) return;
+  const ok=oi===ci;
+  btn.closest('.mcq-opts').querySelectorAll('.mcq-btn').forEach((b,j)=>{b.disabled=true;if(j===ci)b.classList.add('correct');else if(j===oi&&!ok)b.classList.add('wrong');});
+  const exp=DATA.quiz[i].exp;
+  showFb(`fq-fb-${i}`, ok, ok?'Correct! 🌟':('Answer: <strong>'+esc(DATA.quiz[i].opts[ci])+'</strong>. '+esc(exp)));
+  quizAns[i]={ok,pts:ok?DATA.quiz[i].pts:0};
+  setTimeout(()=>{document.getElementById('quiz-container').innerHTML=buildQuizQ(i+1);},1800);
+}
+
+function fqFill(i, correct){
+  const inp=document.getElementById(`fq-inp-${i}`);
+  if(!inp||inp.disabled) return;
+  const ok=inp.value.trim().toLowerCase()===correct.toLowerCase();
+  inp.disabled=true; inp.classList.add(ok?'ok':'bad');
+  showFb(`fq-fb-${i}`, ok, ok?'Correct! 🌟':('Answer: <strong>'+esc(correct)+'</strong>. '+esc(DATA.quiz[i].exp)));
+  quizAns[i]={ok,pts:ok?DATA.quiz[i].pts:0};
+  setTimeout(()=>{document.getElementById('quiz-container').innerHTML=buildQuizQ(i+1);},1800);
+}
+
+function fqWrite(i){
+  const ta=document.getElementById(`fq-writ-${i}`);
+  if(!ta||!ta.value.trim()){notify('Please write something!','warn');return;}
+  const checked=document.querySelectorAll(`[id^="fqri-${i}-"].checked`).length;
+  const total=DATA.quiz[i].rubric.length;
+  const pts=Math.ceil(DATA.quiz[i].pts*(checked/total));
+  quizAns[i]={ok:checked>=total-1,pts};
+  showFb(`fq-fb-${i}`, true, `Submitted! Self-check: ${checked}/${total} ✅`);
+  setTimeout(()=>{document.getElementById('quiz-container').innerHTML=buildQuizQ(i+1);},1800);
+}
+
+function finalizeQuiz(){
+  const total=DATA.quiz.reduce((s,q)=>s+q.pts,0);
+  const earned=Object.values(quizAns).reduce((s,a)=>s+(a.pts||0),0);
+  const pct=Math.round(earned/total*100);
+  ST.quiz={earned,total,pct,ans:quizAns,date:new Date().toISOString()};
+  addPts(earned*3); save();
+  if(pct>=80) confetti(50);
+  return buildQuizResults();
+}
+
+function buildQuizResults(){
+  const fq=ST.quiz;
+  const pct=fq.pct;
+  const grade=pct>=90?'A':pct>=75?'B':pct>=60?'C':'D';
+  const msgs={A:'Outstanding! 🌟 Excellent English!',B:'Great job! 👍 You know your English well!',C:'Good effort! 📚 Review the lessons to improve.',D:'Keep studying! 💪 Practice makes perfect!'};
+  const wrongTopics=new Set(Object.entries(fq.ans||{}).filter(([i,a])=>!a.ok).map(([i])=>DATA.quiz[i]?.topic).filter(t=>t&&t!=='mixed'));
+  const reviewLinksHtml=[...wrongTopics].map(t=>{
+    const labels={'vtb':'Verb To Be','aan':'A / An','tia':'There is/are','prep':'Prepositions'};
+    return `<button class="review-link" onclick="go('${t}')">${labels[t]||t}</button>`;
+  }).join('');
+
+  const ansReview=DATA.quiz.map((q,i)=>{
+    const a=fq.ans&&fq.ans[i];
+    return `<div class="ans-row"><span class="icon">${a?.ok?'✅':'❌'}</span><div class="ans-text">${esc(q.q.slice(0,60))}…<div class="ans-exp">${esc(q.exp)}</div></div></div>`;
+  }).join('');
+
+  return `<div class="quiz-result">
+    <div style="font-size:3rem">🎓</div>
+    <h2 style="margin:.5rem 0">Quiz Complete!</h2>
+    <div class="grade-badge grade-${grade}">${grade}</div>
+    <div class="result-score">${fq.earned} / ${fq.total} pts</div>
+    <p style="font-size:1.05rem;margin:.5rem 0">${msgs[grade]}</p>
+    <p style="color:var(--muted);font-size:.8rem">Completed: ${new Date(fq.date).toLocaleDateString()}</p>
+    ${reviewLinksHtml?`<div style="margin:1.25rem 0"><h4 style="margin-bottom:.6rem">📚 Review these topics:</h4><div class="review-links">${reviewLinksHtml}</div></div>`:'<div style="background:#f0fff8;border-radius:10px;padding:1rem;margin:1rem 0;color:var(--green);font-weight:700">🌟 You mastered all topics!</div>'}
+    <div class="answer-review">${ansReview}</div>
+  </div>`;
+}
+
+// =============================================================
+// PROGRESS PAGE
+// =============================================================
+function buildProgress(){
+  const el=document.getElementById('progress-page-content');
+  const doneV=Object.values(ST.videos).filter(v=>v.done).length;
+  const totalV=Object.values(DATA.lessons).reduce((s,l)=>s+l.videos.length,0);
+  const doneEx=Object.values(ST.exs).filter(e=>e.ok).length;
+  const o=overallPct();
+
+  el.innerHTML=`
+  <div class="progress-section">
+    <h3>⭐ Overall Progress</h3>
+    <div class="progress-overall">
+      <div class="progress-bar"><div class="progress-fill" style="width:${o}%"></div></div>
+      <div class="progress-pct">${o}%</div>
+    </div>
+    <div class="topic-bars">${topicBarsHTML()}</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-icon">🎬</div><div class="stat-value">${doneV}/${totalV}</div><div class="stat-label">Videos Completed</div></div>
+    <div class="stat-card"><div class="stat-icon">✏️</div><div class="stat-value">${doneEx}</div><div class="stat-label">Exercises Done</div></div>
+    <div class="stat-card"><div class="stat-icon">⭐</div><div class="stat-value">${ST.pts||0}</div><div class="stat-label">Total Points</div></div>
+    <div class="stat-card"><div class="stat-icon">📝</div><div class="stat-value">${ST.quiz?ST.quiz.pct+'%':'—'}</div><div class="stat-label">Final Quiz Score</div></div>
+  </div>
+
+  <h2 style="margin:2rem 0 1rem">🏆 Achievements</h2>
+  <div class="achievements-grid">
+    ${[
+      {icon:'🎬',name:'First Video',earned:doneV>=1},
+      {icon:'📝',name:'Verb To Be ✓',earned:topicPct('vtb')>=50},
+      {icon:'🔤',name:'A/An Master',earned:topicPct('aan')>=50},
+      {icon:'🏡',name:'There is/are ✓',earned:topicPct('tia')>=50},
+      {icon:'📍',name:'Prepositions ✓',earned:topicPct('prep')>=50},
+      {icon:'⭐',name:'100 Points',earned:(ST.pts||0)>=100},
+      {icon:'🎓',name:'Quiz Done!',earned:!!ST.quiz},
+      {icon:'🏆',name:'Quiz Score A',earned:ST.quiz?.pct>=90}
+    ].map(a=>`<div class="ach ${a.earned?'earned':''}"><div class="ach-icon">${a.icon}</div><div class="ach-name">${a.name}</div></div>`).join('')}
+  </div>`;
+}
+
+// =============================================================
+// TEACHER MODE
+// =============================================================
+let teacherOn=false;
+
+function openTeacher(){document.getElementById('teacher-modal').classList.add('open'); setTimeout(()=>document.getElementById('teacher-pw').focus(),100);}
+function closeTeacher(){document.getElementById('teacher-modal').classList.remove('open');}
+
+function checkTeacher(){
+  const pw=document.getElementById('teacher-pw').value;
+  const err=document.getElementById('teacher-err');
+  if(pw==='TEACHER123'){
+    teacherOn=true; closeTeacher();
+    document.getElementById('teacher-bar').classList.add('show');
+    document.body.style.paddingBottom='70px';
+    notify('🎓 Teacher Mode activated!','info');
+  } else {
+    err.style.display='block';
+    document.getElementById('teacher-pw').value='';
+    document.getElementById('teacher-pw').focus();
+  }
+}
+
+function closeTeacherBar(){
+  document.getElementById('teacher-bar').classList.remove('show');
+  document.body.style.paddingBottom='';
+  teacherOn=false;
+}
+
+function teacherReveal(){
+  // Show fill-in-blank answers
+  document.querySelectorAll('.fill-input').forEach(inp=>{
+    if(inp.dataset.ans) {
+      inp.value = inp.dataset.ans;
+      inp.style.background = '#f0fff5';
+      inp.style.borderColor = 'var(--green)';
+    }
+  });
+  // Highlight correct MCQ buttons
+  document.querySelectorAll('.mcq-btn').forEach(btn=>{
+    if(btn.dataset.correct === 'true') btn.classList.add('correct');
+  });
+  notify('👁 Answers revealed for teacher review ✅','ok');
+}
+
+function teacherResetProgress(){
+  if(!confirm('Reset ALL student progress? This cannot be undone.')) return;
+  ST=fresh(); save();
+  notify('Progress reset ✅','warn');
+  location.reload();
+}
+
+function teacherResetQuiz(){
+  if(!confirm('Reset the Final Quiz?')) return;
+  ST.quiz=null; save();
+  buildQuiz();
+  notify('Final Quiz reset ✅','warn');
+}
+
+// =============================================================
+// UTILITIES
+// =============================================================
+function esc(s){
+  return String(s||'')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;');
+}
+
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+function mkLetter(j){return `<span class="opt-letter">${String.fromCharCode(65+j)}</span>`;}
+
+function showFb(id, ok, html){
+  const el=document.getElementById(id);
+  if(!el) return;
+  el.className='fb '+(ok?'ok':'bad')+' show';
+  el.innerHTML=(ok?'✅ ':'❌ ')+html;
+}
+function clearFb(id){const el=document.getElementById(id);if(el){el.className='fb';el.innerHTML='';}}
+
+function notify(msg, type='ok'){
+  const el=document.createElement('div');
+  el.className=`notif ${type}`;
+  el.textContent=msg;
+  document.body.appendChild(el);
+  setTimeout(()=>{el.style.opacity='0';el.style.transform='translateX(120%)';el.style.transition='all .4s';setTimeout(()=>el.remove(),400);},2800);
+}
+
+function confetti(n=30){
+  const colors=['#ff4757','#2979ff','#00bfa6','#ffca28','#7c4dff','#ff6d00','#e91e8c'];
+  for(let i=0;i<n;i++){
+    const p=document.createElement('div');
+    p.className='confetti-p';
+    p.style.cssText=`left:${Math.random()*100}vw;top:-20px;background:${colors[i%colors.length]};width:${8+Math.random()*8}px;height:${12+Math.random()*14}px;transform:rotate(${Math.random()*360}deg);animation-duration:${2+Math.random()*1.5}s;animation-delay:${Math.random()*0.4}s`;
+    document.body.appendChild(p);
+    p.addEventListener('animationend',()=>p.remove());
+  }
+}
+
+// =============================================================
+// INIT
+// =============================================================
+document.addEventListener('DOMContentLoaded',()=>{
+  // Initial progress bars
+  refreshProgress();
+  // Set home topic bars
+  const tb=document.getElementById('topic-bars-home');
+  if(tb) tb.innerHTML=topicBarsHTML();
+});
+</script>
+</body>
+</html>
